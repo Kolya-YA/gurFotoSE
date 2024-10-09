@@ -1,5 +1,5 @@
 ---
-title: "Datensicherheit"
+title: "Урбанизм"
 metaTitle: "Datenschutz & Datenträgervernichtung"
 description: "Datenschutz und Sicherheit bei der Vernichtung von Datenträgern gemäß den Bestimmungen des Bundesdatenschutzgesetzes und des Bundesamtes für Sicherheit in der Informationstechnik (BSI)"
 weight: 20
@@ -7,8 +7,7 @@ date: 2023-11-14
 
 menu:
   top:
-      parent: Datenträgervernichtung
-      identifier: Datensicherheit-inner
+      parent: Фотографии
       weight: 20
 ---
 

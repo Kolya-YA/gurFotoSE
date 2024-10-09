@@ -1,11 +1,11 @@
 ---
-title: "Datenlöschung"
+title: "Город"
 weight: 20
 date: 2023-07-20
 
 menu:
   top:
-      parent: Datensicherheit
+      parent: "Виртуальные туры"
       weight: 20
 ---
 

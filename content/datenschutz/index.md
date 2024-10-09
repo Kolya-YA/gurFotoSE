@@ -1,5 +1,5 @@
 ---
-title: Datenschutz
+title: "Персональные данные"
 date: 2023-01-01
 url: datenschutz
 noRobots: true

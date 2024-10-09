@@ -1,5 +1,5 @@
 ---
-title: "Datenträgervernichtung"
+title: "Фотографии"
 metaTitle: "Professioneller Datenträger-Vernichtungsservice"
 description: "Festplatten, SSDs und andere Datenträger vernichten wir kostenlos. Unsere Entsorgungsmethoden sind umweltschonend und entsprechen den Sicherheitsstandards des BDSG-Datenschutzgesetzes und der DIN 33858."
 date: 2023-10-02

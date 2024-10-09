@@ -1,11 +1,11 @@
 ---
-title: "Datenschutz"
+title: "Портрет"
 weight: 30
 date: 2023-07-01
 
 menu:
   top:
-      parent: Datenträgervernichtung
+      parent: Фотографии
       weight: 30
 ---
 
