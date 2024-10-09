@@ -1,0 +1,30 @@
+{{- $respSizes := slice "360" "640" "960" "1280" "1600" -}}
+{{- $src := resources.Get (path.Join "images" (.Get "src")) -}}
+{{- $alt := .Get "alt" -}}
+{{- $dataSizes := "(min-width: 1024px) 50vw, 100vw" -}}
+{{- $actualImg := $src.Resize "640x jpg q69" -}}
+
+<picture>
+    <source
+        srcset="
+        {{- with $respSizes -}}
+            {{ $len := (len .) }}
+            {{- range $i, $size := . -}}
+                {{- if ge $src.Width . -}}
+                    {{- ($src.Resize (printf "%sx webp" $size )).RelPermalink }} {{ $size }}w
+                    {{- if lt $i (sub $len 1) }},{{ end }}
+                {{ end -}}
+            {{- end -}}
+        {{- end -}}
+        "
+        sizes="{{ $dataSizes }}"
+    >    
+    <img
+        src="{{ $actualImg.RelPermalink }}"
+        width="{{ $src.Width }}"
+        height="{{ $src.Height }}"
+        alt="{{ $alt }}"
+        loading="lazy"
+        decoding="async"
+    >
+</picture>

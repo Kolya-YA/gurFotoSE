@@ -1,0 +1,58 @@
+# Do not change!
+baseURL = ''
+# Do not change! 
+defaultContentLanguage = 'ru'
+# SEO — text for title tag in head section
+title = "Datenrettung & Datenträgervernichtung — ./HeadCrash"
+
+# Do not change! Used theme name
+theme = "gurfoto"
+# Do not change!
+disableKinds = ["taxonomy", "term"]
+# Do not change!
+enableRobotsTXT = true
+
+[params]
+    # SEO — text for meta description
+    description = "Wir sind Ihr führendes Datenrettungsunternehmen für professionelle Datenträgervernichtung, zuverlässige Datenlöschung und effektive Datenwiederherstellung. Vertrauen Sie auf unsere Expertise!"
+    # used in the JSON-LD (microdata)
+    name = "GurFoto"
+    # used in header
+    logoName = "GurFoto"
+    # used in the JSON-LD and footer
+    foundingDate = 2005
+    # used in the JSON-LD and footer
+    email = "hddtech@gmx.net"
+    # Used in the footer
+    phones = [
+        "030-4408242",
+        
+    ]
+    # Used in the footer
+    address = [
+        "*headCrash.net*",
+        "Siemensstr. 10",
+        "10551",
+        "Berlin",
+        "Deutschland",
+        "*Parkplätze stehen vor dem Haus zur Verfügung*"
+    ]
+    # Used in the footer, google map route url
+    mapRoute =  "https://www.google.at/maps/dir//Siemens+Str.+10,+10551+Berlin" 
+    
+    # Name of the image for the hero section on home page. Image is located ./assets/images/
+    heroBackground = "59.jpg"
+
+# Do not change!
+[privacy]
+  [privacy.googleAnalytics]
+    disable = false
+    respectDoNotTrack = false
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 2
+
+[services]
+  [services.googleAnalytics]
+    ID = ""

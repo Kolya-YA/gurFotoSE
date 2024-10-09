@@ -1,0 +1,10 @@
+{{- $jsParams := dict "isProduction" hugo.IsProduction }}
+{{- $buildOptions := dict "target" "es2020" "params" $jsParams }}
+
+{{- $footerScript := resources.Get "js/footer-script.js" | js.Build $buildOptions -}}
+
+{{- if not hugo.IsServer }}
+  {{ $footerScript = $footerScript | minify | fingerprint -}}
+{{- end }}
+
+<script defer src="{{ $footerScript.RelPermalink }}"></script>
