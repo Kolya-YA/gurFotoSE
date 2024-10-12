@@ -13,9 +13,9 @@ disableKinds = ["taxonomy", "term"]
 enableRobotsTXT = true
 
 [params]
-    heroTitle = "BlaBlaBla"
+    heroTitle = "Фотоагентство"
     # SEO — text for meta description
-    description = "Портрет, интерьерная"
+    description = "Портрет, интерьерная, предметная, архитектурная, панорамная и рекламная съемка. Проект: Фотошкола в Ростове"
     # used in the JSON-LD (microdata)
     name = "GurFoto.Ru"
     # used in header

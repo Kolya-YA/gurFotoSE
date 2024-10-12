@@ -1,24 +1,22 @@
 ---
-title: "Kontaktformular"
+title: "Контакты"
 date: 2023-06-01
-cover_img: "rifath-photoripey-Ir0VrE74xKg-unsplash.jpg"
-cover_img_credits: "Photo by [Rifath @photoripey](https://unsplash.com/es/@photoripey?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/Ir0VrE74xKg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
-
-form: "contact-form.md"
+cover_img: "1-11.webp"
+cover_img_credits: ""
 
 menu:
     top:
-        name: Kontakt
-        weight: 60
+        name: "Контакты"
+        weight: 70
     info:
-        name: Kontakt
+        name: "Контакты"
         weight: 140
 --- 
 
-## Kontaktformular
+## Свяжитесь с нами прямо сейчас!
 
-Mit dem Kontaktformular haben Sie die Möglichkeit kostenlos, schnell und unverbindlich per Mail Kontakt mit unseren Datenrettungsspezialisten aufzunehmen. Auf Ihre Anfrage hin werden wir uns schnellstmöglich bei Ihnen melden.
+Вы можете связаться с нами по телефону <span><br><a href="tel: + 79198742024"> **+7 919 874 20 24** *(Phone/WhatsApp)* </a><br></span>  
+*c 10:00 - 21:00 без выходных* <br>
 
-Füllen Sie bitte, wenn möglich, alle Felder des Formulares aus. Nur so können wir uns ideal auf Ihr Problem einstellen.
+Либо отправить электронное письмо: <biggur@mail.ru>
 
----

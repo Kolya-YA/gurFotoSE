@@ -16,7 +16,7 @@ date: 2023-06-01
 
 **Unsere Bearbeitungszeiten sind hierbei:**
 
-- Kosten und Dauer der Datenrettungsdienste finden Sie in unserer [Preisliste]({{< relref "datenrettung#price" >}})
+- Kosten und Dauer der Datenrettungsdienste finden Sie in unserer
 - Business Service: 2-4 Werktage
 - Option High Priority: sofort 24/7
 - Economy Service: 10-14 Werktage

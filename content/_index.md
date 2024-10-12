@@ -1,28 +1,46 @@
 ---
-titLe: Professionelle Datenrettung
+titLe: Профессиональная фотосъемка
 description: ""
 date: 2024-02-20
 
 infoSection: "home-info/index.md"
 ---
 
-Die Datenrettung hat in den letzten Jahren immer mehr an Bedeutung gewonnen. Inzwischen sind die Daten wesentlich wertvoller als die Speichermedien auf welchen sie gesichert wurden. Es gibt weniges, das ein Unternehmen härter trifft und selten etwas, das so ärgerlich für Privatleute ist, wie der Datenverlust von wichtigen Informationen. Aber egal ob Daten unabsichtlich gelöscht, der Datenträger beschädigt wurde oder die Daten durch logische Fehler abhanden gekommen sind – wir können Ihnen helfen!
+## Добро пожаловать в мир фотографии!
 
-Wir sind ein Dienstleister, der sich auf die Wiederherstellung von Daten spezialisiert hat. Wir kümmern uns um die Rettung von Daten auf Festplatten, RAID-Systemen und anderen Speichermedien.
+Мы стремимся запечатлеть самые яркие моменты вашей истории. Наша миссия — создавать качественный фотоконтент для вашего бизнеса и жизни. И мы делаем это правильно!
 
-{{< imgr src="20230628_133927.jpg" alt="Geöffnete Festplatte und die wichtigsten Teile" >}}
+### Наши услуги
 
-*Unsere Dienstleistung bieten wir Unternehmen aber auch Privatleuten an. Nutzen Sie unser [Kontaktformular]({{< relref "contact" >}}) für eine direkte und unverbindliche Anfrage oder wählen Sie unsere kostenfreie Servicenummer 0800-4335222.*
+- **Портретная съемка,** в персональной или семейная съемке, мы раскроем вашу индивидуальность и покажем глубину отношений с близкими. Создавать стильные, выразительные портреты ─ наша профессия.
+- **Репортажная съемка,** жанр фотографий, который направлен на то, чтобы отразить событие в его естественном течении и создать визуальный рассказ об этом. Наши фотографы умеют делать репортажи, отражающие саму суть событий.
+- **Интерьерная съемка,** важный аспект визуального маркетинга, который позволяет визуализировать представление об обсуждаемом пространстве. Качественные интерьерные фотографии отражают идеи, которые требуется донести до аудитории. Мы умеем представить пространство в идеальном ракурсе!
+- **Предметная съемка,** технический жанр фотографии, направленный на детальное изображение объекта. Такие фотографии востребованы для создания качественного визуального контента, использующегося в каталогах, на веб-сайтах и ​​в рекламных материалах. Огромный опыт помогает создвать нам оптимальные фотографии для продвижения товара.
 
-## Wir retten Ihre Daten
+### Почему выбирают нас?
 
-- professionell
-- schnell
-- bei absoluter Diskretion
-- und sie zahlen nur bei Erfolg
+- **Профессионализм.** Наша команда состоит из опытных фотографов, увлеченных фотографией много лет и имеющих богатое портфолио.
+- **Индивидуальный подход.** Мы всегда учитываем пожелания и идеи заказчика, чтобы создавать фотографии, которые вы ожидаете.
+- **Качество.** Мы используем профессиональное оборудование и технологии для достижения наилучшего результата.
 
-{{< imgr src="20230626_154333.jpg" alt="Geöffnete Festplatte im Reinraum" >}}
+### Свяжитесь с нами
 
-Der Prozess der **Datenwiederherstellung** ist bei uns einfach und schnell gehalten. Hier können Sie sich über den Ablauf der Datenrettung informieren. Der Prozess beginnt mit dem Absenden Ihrer Anfrage an uns. Für diejenigen, die lieber telefonieren, stehen unsere Kundenbetreuer bereit, um alle relevanten Daten aufzunehmen und Ihnen zu helfen.
+Свяжитесь с нами прямо сейчас, чтобы обсудить детали. Мы с нетерпением ждем возможности работать с вами!
+*Переходите на страницу с нашими* **[контактами]({{< relref "contact" >}})**
 
-Falls sie sich erstmal näher zum Thema Datenrettung einlesen möchten finden Sie auf unserer Webseite ein [Lexikon-Datenrettung]({{< relref "blog/lexicon" >}}) mit Erklärungen zu den Fachbegriffen und den Sachverhalten im Bereich der Datenrettung.
+{{< imgr src="Collag1.webp" alt="Коллаж из фотографий разных жанров" >}}
+
+## Проект "Фотошкола в Ростове"
+
+Методика базируется на индивидуальном обучении. Наш опыт и опыт других школ показывает, что такой подход почти всегда обеспечивает максимально эффективный результат.
+
+### В чем преимущество индивидуального обучения?
+
+Основная проблема возникает на этапе формирования учебной группы, дело в том, что уровни подготовки учащихся в конкретной группе, чаще всего, сильно различаются. Эту проблему можно решить с помощью индивидуального обучения, но обычно, это влечет за собой ощутимый рост стоимости курса…
+
+### Нам удалось решить эту проблему
+
+Учебный курс состоит из отдельных модулей, каждый модуль включает лекционную (теоретическую) часть и практические задания. Прослушав лекцию, студент выполняет задания, преподаватель анализирует результаты и дает рекомендации.  
+Минимизируя время, затраченное непосредственно преподавателем, удается кратно снизить стоимость обучения.
+
+{{< imgr src="1-13.webp" alt="Съемка смартфоном вида Праги" >}}

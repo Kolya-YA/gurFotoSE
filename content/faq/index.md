@@ -9,10 +9,10 @@ cover_img_credits: "Photo by [Mark König](https://unsplash.com/de/@markkoenig?u
 
 menu:
     top:
-        weight: 40
+        weight: 65
     info:
         name: "Häufig gestellte Fragen (FAQ)"
-        weight: 120
+        weight: 130
 ---
 
 ## Häufig gestellte Fragen
