@@ -12,7 +12,7 @@
 {{- end }}
 
 {{- with $pageBg }}
-{{- $bgimg := .Resize "600x webp q30" }}
+{{- $bgimg := .Resize "600x webp" }}
 <header
 class="page-header page-header--bg"
 style="--page-header-bg-image: url('{{ $bgimg.RelPermalink }}');">
