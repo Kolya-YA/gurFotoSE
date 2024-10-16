@@ -1,10 +1,10 @@
 ---
 title: "Google панорамы"
-metaTitle: "Professioneller Datenrettungs-Service"
-description: "Mit über 10 Jahren erfolgreicher Erfahrung in der Wiederherstellung von Daten auf verschiedenen Datenträgern für private und geschäftliche Kunden. Schnellstmögliche Abwicklung zu fairen Preisen."
+metaTitle: "Представление вашего пространства в глобальной сети"
+description: "Панорамы помещений вашего бизнеса в глобальной сети позволяют огромной аудитории создать у себя яркое положительное впечатление о нем"
 cover_img: "61.jpg"
-cover_img_credits: "Photo by [Yuri Gurevich](https://gurfoto.ru/contacts/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [GurFoto](https://gurfoto.ru/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
-date: 2024-08-13
+cover_img_credits: ""
+date: 2024-10-13
 
 price: "price-datenrettung.md"
 

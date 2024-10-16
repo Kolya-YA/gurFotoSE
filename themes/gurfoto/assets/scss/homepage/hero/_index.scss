@@ -6,14 +6,15 @@
         position: absolute;
         z-index: -1;
         inset: 0;
-        background: 
+        background:
             var(--hero-bg-image),
-            var(--dark-bg-gradient, var(--dark-bg-color));
+            var(--dark-bg-gradient, var(--dark-bg-color))
+            ;
         background-blend-mode: overlay;
         background-repeat: repeat-x;
         background-size: cover;
         background-position: center;
-        filter: sepia(30%)
+        filter: sepia(30%);
     }
 
     &__block {

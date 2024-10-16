@@ -1,72 +1,55 @@
 ---
 title: "FAQ"
-metaTitle: "FAQ — Häufig gestellte Fragen zur Datenrettung"
-description: "In unserem FAQ-Bereich zur Datenrettung von Festplatten und anderen Datenträgern! Wenn Sie schon einmal mit dem Verlust wertvoller Daten konfrontiert waren, verstehen wir Ihre Sorgen. Unsere Experten helfen Ihnen gerne weiter."
-date: 2023-08-26
+metaTitle: "FAQ — часто задаваемые вопросы"
+description: ""
+date: 2024-10-13
 
-cover_img: "mark-konig-fbKMKNVJjwo-unsplash.jpg"
-cover_img_credits: "Photo by [Mark König](https://unsplash.com/de/@markkoenig?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/fbKMKNVJjwo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
+cover_img: "1B7W9094.webp"
+cover_img_credits: ""
 
 menu:
     top:
         weight: 65
     info:
-        name: "Häufig gestellte Fragen (FAQ)"
+        name: "Часто задаваемые вопросы (FAQ)"
         weight: 130
 ---
 
-## Häufig gestellte Fragen
+## Часто задаваемые вопросы
 
-Willkommen in unserem FAQ-Bereich zur Datenrettung von Festplatten und anderen Datenträgern! Wenn Sie schon einmal mit dem Verlust wertvoller Daten konfrontiert waren, verstehen wir Ihre Sorgen. Unsere Experten helfen Ihnen gerne weiter. In diesem Bereich finden Sie klare und präzise Antworten auf häufig gestellte Fragen zu unserem Wiederherstellungsprozess, den unterstützten Medientypen, den Erfolgsquoten und vielem mehr. Unser Ziel ist es, Ihnen Informationen zur Verfügung zu stellen, die Ihnen helfen, fundierte Entscheidungen über die Wiederherstellung Ihrer verlorenen Daten zu treffen. Durchsuchen Sie unsere Antworten, um sich einen Überblick zu verschaffen, und zögern Sie nicht, uns zu kontaktieren, wenn Sie weitere Fragen haben.
 
-{{<details "Was ist ein Headcrash?" "open">}}
-Ein Headcrash ist eine Beschädigung der magnetischen Oberfläche einer Festplatte durch den Kontakt mit dem Lesekopf. Dies kann zu Datenverlust, Geräuschen, Fehlfunktionen oder Ausfällen der Festplatte führen. Eine Datenrettung bei einem Headcrash-Schaden kann ausschließlich unter Reinraum-Bedingungen und mit Verwendung von speziellen Soft- und Hardware-Werkzeugen durchgeführt werden.
+{{<details "Что такое профессиональный фотограф?" "open">}}
+Любой человек, владеющий фотокамерой, может считаться профессиональным фотографом, если он зарабатывает себе на жизнь, продавая фотографии... но когда люди задают этот вопрос, то имеют в виду совершенно другое. Они подменяют понятие "**мастерство**" термином "**профессионализм**". В этом кроется заблуждение!
+А кто такой "**мастер фотографии**"? Это человек, который может предложить заказчику оригинальную идею съемки, правильно построить каждый кадр, организовать эффектное освещение, помочь с позированием, мимикой. Мастер должен обладать художественным вкусом, чувством гармонии и большой насмотренностью.
+{{</details>}}
+{{<details "Как понять профессиональный слэнг, который используют фотографы?">}}
+Фотографы-мастера, как и другие специалисты экспертного уровня, в разговоре с заказчиками, не используют специальные термины. Так поступают люди, неуверенные в своей компетентности и желающие произвести хорошее впечатление на потенциальных клиентов. Специалисты, напротив, объясняют все предельно понятно, а профессиональные термины используют только для общения в профессиональном сообществе.
 {{</details>}}
 
-{{<details "Wie kann man einen Headcrash vermeiden?">}}
-Ein Headcrash kann durch verschiedene Faktoren verursacht werden, wie z.B. Stöße, Erschütterungen, Temperaturschwankungen, Verschmutzung, Verschleiß oder Herstellungsfehler. Um einen Headcrash zu vermeiden, sollte man folgende Vorsichtsmaßnahmen treffen:
-
-- Die Festplatte an einem stabilen, trockenen und kühlen Ort aufbewahren und vor Staub schützen.
-- Die Festplatte nicht bewegen oder schütteln, wenn sie in Betrieb ist oder kurz danach.
-- Die Festplatte regelmäßig überprüfen und warten, z.B. mit Diagnose- oder Defragmentierungsprogrammen.
-- Die Festplatte nicht überlasten oder überhitzen lassen, z.B. durch zu viele Programme oder Dateien.
-- Die Festplatte nicht öffnen oder manipulieren, da dies die Garantie erlischt und die Daten gefährdet.
+{{<details "Должен ли фотограф отдавать исходные файлы заказчику?">}}
+Все зависит от того, о чем вы договорились. По-умолчанию, фотограф отдает файлы в формате JPG, но вы можете договориться о том, что вам отдадут фотографии в том формате, который вам требуется, включая необработанные исходные изображения в формате RAW. Речь идет о выбранных фотографом изображениях, если речь идет о том, чтобы получить абсолютно все файлы с карты памяти... это требует отдельного согласования и далеко не все фотографы на это соглашаются, особенно это касается опытных мастеров фотографии.
 {{</details>}}
 
-{{<details "Wie kann man Daten von einer Festplatte mit einem Headcrash retten?">}}
-Daten von einer Festplatte mit einem Headcrash zu retten ist eine komplexe und heikle Aufgabe, die nur von qualifizierten Fachleuten durchgeführt werden sollte. Der Versuch, die Daten selbst zu retten, kann zu weiteren Schäden oder zum endgültigen Verlust der Daten führen. Um Daten von einer Festplatte mit einem Headcrash zu retten, sollte man folgende Schritte befolgen:
-
-- Die Festplatte sofort ausschalten und vom Strom trennen, um weitere Schäden zu vermeiden.
-
-- Die Festplatte nicht mehr anschließen oder einschalten, um die Daten nicht zu überschreiben oder zu löschen.
-
-- Die Festplatte an einen professionellen Datenrettungsdienst wie headcrash.net senden oder bringen, der über die erforderlichen Werkzeuge, Methoden und Erfahrungen verfügt, um die Daten zu retten.
-
-- Die Kosten und die Erfolgsaussichten der Datenrettung mit dem Datenrettungsdienst besprechen und einen Auftrag erteilen.
-
-- Die wiederhergestellten Daten auf einem neuen Datenträger erhalten und überprüfen.
+{{<details "Имеет ли значение марка и модель фотокамеры, которую использует фотограф?">}}
+Однозначно, это значения не имеет. Снимает не камера, а человек, именно в его голове рождается фотография. Куда важней портфолио, которое вам должны показать.
 {{</details>}}
 
-{{<details "Warum sollte man sich für headcrash.net entscheiden?">}}
-
-Headcrash.net ist ein führender Anbieter von Datenrettungsdienstleistungen in Deutschland, der sich auf die Rettung von Daten von Festplatten mit einem Headcrash spezialisiert hat. Headcrash.net bietet Ihnen folgende Vorteile:
-
-- Kostenlose Diagnose und Kostenvoranschlag für Ihre Festplatte.
-- Schnelle und sichere Datenrettung mit hoher Erfolgsquote.
-- Professionelle und zertifizierte Techniker mit langjähriger Erfahrung.
-- Modernste Technologie und Reinraum-Labor.
-- Diskreter und vertraulicher Umgang mit Ihren Daten.
-- Faire und transparente Preise ohne versteckte Kosten.
+{{<details "Как подготовиться к съемке?">}}
+Подготовка включает обсуждение с фотографом идеи для фотосессии, выбор одежды и локации. За несколько дней до съемки рекомендуется отправить фотографии образов, которые вы планируете использовать.
 {{</details>}}
 
-{{<details "Wie viel kann eine professionelle Datenrettung kosten?">}}
-Die Kosten für eine professionelle Datenrettung hängen von verschiedenen Faktoren ab, wie z.B. dem Zustand der Festplatte, dem Umfang und der Art der Daten, dem Schwierigkeitsgrad der Datenrettung und dem gewünschten Service-Level. Die Kosten können von einigen hundert bis zu  tausend Euro variieren. Um die genauen Kosten für Ihre Festplatte zu erfahren, sollten Sie eine kostenlose Diagnose und einen Kostenvoranschlag bei einem professionellen Datenrettungsdienst wie headcrash.net anfordern.
+{{<details "Можно ли поручить фотографу часть подготовки, включающую поиск визажиста и аренду одежды и аксессуаров">}}
+Обычно это возможно, но нужно понимать, что то что фотограф будет делать сверх обычных обязанностей, потребует дополнительной оплаты, что может очень сильно увеличить бюджет съемки,
 {{</details>}}
 
-{{<details "Wie lange dauert die Datenrettung bei einem professionellen Unternehmen?">}}
-Die Dauer der Datenrettung bei einem professionellen Unternehmen hängt ebenfalls von verschiedenen Faktoren ab, wie z.B. dem Zustand der Festplatte, dem Umfang und der Art der Daten, dem Schwierigkeitsgrad der Datenrettung und dem gewählten Service-Level. Die Dauer kann von einigen Stunden bis zu mehreren Wochen variieren. Um die genaue Dauer für Ihre Festplatte zu erfahren, sollten Sie eine kostenlose Diagnose und einen Zeitplan bei einem professionellen Datenrettungsdienst wie headcrash.net anfordern.
+{{<details "Какое количество фотографий получит заказчик в результате?">}}
+Количество фотографий зависит от длительности съемки и ее сложности. Обычно количество изображений за час работы обсуждается заранее.
 {{</details>}}
 
-{{<details "Wie bekomme ich die geretteten Daten geliefert?">}}
-Die geretteten Daten werden Ihnen in der Regel auf einem neuen Datenträger geliefert, den Sie entweder selbst bereitstellen oder vom professionellen Datenrettungsdienst erwerben können. Der Datenträger kann eine Festplatte, ein USB-Stick, eine DVD oder eine Cloud-Lösung sein. Die geretteten Daten werden Ihnen entweder per Post oder Kurier zugeschickt oder persönlich übergeben. Sie sollten die geretteten Daten überprüfen und sicher aufbewahren, bevor Sie die alte Festplatte entsorgen oder zurücksenden.
+{{<details "Требуется ли предоплата?">}}
+Да, как правило фотограф просит внести предоплату в размере 50-100%
+{{</details>}}
+
+{{<details "Каким образом фотографии передаются заказчику?">}}
+Чаще всего фотографии передаются в электронном виде через файлообменники, иногда записываются на физический носитель. Если была заказана печать, то, соответственно, заказчику передаются отпечатки
 {{</details>}}

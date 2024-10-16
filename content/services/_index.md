@@ -1,10 +1,10 @@
 ---
 title: "Услуги"
-metaTitle: "Professioneller Datenrettungs-Service"
-description: "Mit über 10 Jahren erfolgreicher Erfahrung in der Wiederherstellung von Daten auf verschiedenen Datenträgern für private und geschäftliche Kunden. Schnellstmögliche Abwicklung zu fairen Preisen."
-cover_img: "61.jpg"
-cover_img_credits: "Photo by [Yuri Gurevich](https://gurfoto.ru/contacts/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [GurFoto](https://gurfoto.ru/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
-date: 2024-08-13
+metaTitle: "Фотоуслуги, предоставляемые агентством"
+description: "Спектр фотоуслуг, предоставляемых агентством GurFoto.Ru, включает различные виды фотосъемки и обучение фотографов"
+cover_img: "img5.webp"
+cover_img_credits: ""
+date: 2024-10-13
 
 price: "price-datenrettung.md"
 
@@ -16,8 +16,12 @@ menu:
         weight: 50
 ---
 
-## Professionelle Datenrettung
+## Услуги, которые мы предлагаем
+Испытывая уважение к клиентам, мы предлагаем, только те услуги, в качестве которых совершенно уверены.
+В их числе портретная, репортажная, предметная, интерьерная и архитектурная съемка.
 
-Die  hat in den letzten Jahren immer mehr an Bedeutung gewonnen. Inzwischen sind die Daten wesentlich wertvoller als die Speichermedien auf welchen sie gesichert wurden. Es gibt weniges, das ein Unternehmen härter trifft und selten etwas, das so ärgerlich für Privatleute ist, wie der Datenverlust von wichtigen Informationen. Aber egal ob Daten unabsichtlich gelöscht, der Datenträger beschädigt wurde oder die Daten durch logische Fehler abhanden gekommen sind – wir können Ihnen helfen!
-
-Wir als Dienstleister haben uns auf die Datenwiederherstellung spezialisiert und kümmern uns um die Datenrettung von Festplatten, Datenrettung von RAID-Systemen, SSD, Speicherkarten und vielen weiteren Speichermedien.
+- Портретная съемка включает в себя все жанры от тематической семейной съемки до делового портрета
+- Наши фотографы снимают репортажи любых событий от семейных торжеств до общественно значимых событий. Отдельной темой стоят спортивные репортажи, которые мы не обходим стороной
+- Специалисты агентства создают предметные фотографии, от одежды до ювелирных изделий. В этом жанре, отдельной строуой, выделяется фуд-фотография. Мы снимаем предметные фотографии для маркетплейсов и для рекламы
+- У нас большой опыт в съемке интерьеров, от жилых объектов, до гостиничных и ресторанных комплексов
+- Мы создаем виртуальные туры, размещение которых возможно как на корпоративных сайтах, так и среде таких систем как **Google** и **Yandex**

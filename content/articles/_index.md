@@ -1,7 +1,7 @@
 ---
 title: "Статьи"
-metaTitle: "Professioneller Datenrettungs-Service"
-description: "Mit über 10 Jahren erfolgreicher Erfahrung in der Wiederherstellung von Daten auf verschiedenen Datenträgern für private und geschäftliche Kunden. Schnellstmögliche Abwicklung zu fairen Preisen."
+metaTitle: "Статьи, оаубликованные участниками агентства"
+description: "Статьи о фотографии, опубликованные участниками агентсва GurFoto.Ru на различных платформах, включая Яндекс Дзен в канале Фоторазговоры"
 cover_img: "1B7W9094.webp"
 cover_img_credits: ""
 date: 2024-08-13
