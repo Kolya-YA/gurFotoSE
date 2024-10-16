@@ -11,17 +11,33 @@ menu:
       weight: 60
 
 gal01:
-  - file: file1.jpg
+  - file: datenloeschung.jpg
     alt: "File one"
-  - file: file2.jpg
+  - file: datenloeschung.jpg
     alt: "File two"
-  - file: file3.jpg
+  - file: datenloeschung.jpg
     alt: "File three"
-
-custom_param: "Hello, World!"
-another_param: 42
+  - file: datenloeschung.jpg
+    alt: "File one"
+  - file: datenloeschung.jpg
+    alt: "File two"
+  - file: datenloeschung.jpg
+    alt: "File three"
+  - file: datenloeschung.jpg
+    alt: "File one"
+  - file: datenloeschung.jpg
+    alt: "File two"
+  - file: datenloeschung.jpg
+    alt: "File three"
+  - file: datenloeschung.jpg
+    alt: "File one"
+  - file: datenloeschung.jpg
+    alt: "File two"
+  - file: datenloeschung.jpg
+    alt: "File three"
 ---
 
 Фотосъемка животных — жанр, близкий к портрету, который позволяет запечатлеть красоту и индивидуальность ваших питомцев. Мы создаем яркие и эмоциональные изображения, которые передают характер и настроение ваших четвероногих друзей. Мы работаем как с домашними, так и с дикими животными, создавая уникальные моменты.
 
 {{< gallery "gal01" >}}
+{{< gallery "gal01" "100px" >}}
