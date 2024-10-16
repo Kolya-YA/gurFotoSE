@@ -1,0 +1,10 @@
+{{ $gal := .Get 0 }}
+{{ with $.Page.Param ($gal) }}
+<ul class="sc-gallery">
+    {{ range . }}
+    <li>{{ .file }} — {{ .alt }}</li>
+    {{ end }}
+</ul>
+{{ else }}
+{{ errorf "Gallery %q not found" $gal }}
+{{ end}}
