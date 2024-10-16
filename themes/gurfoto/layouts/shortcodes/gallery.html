@@ -1,16 +1,15 @@
-{{ $gal := .Get 0 }}
-{{ $colWidth := .Get 1}}
-{{ $imgWidth := default 240 (replaceRE "[^0-9]+" "" $colWidth) }}
-{{ $imgWidth = cast.ToInt $imgWidth }}
-{{ $imgWidth = mul $imgWidth 1.5 }}
-{{ $imgWidth = add $imgWidth 8 }}
+{{- $gal := .Get 0 }}
+{{- $colWidth := .Get 1}}
+{{- $imgWidth := default 240 (replaceRE "[^0-9]+" "" $colWidth) }}
+{{- $imgWidth = cast.ToInt $imgWidth }}
+{{- $imgWidth = mul $imgWidth 1.5 }}
+{{- $imgWidth = add $imgWidth 8 }}
 
-<p>{{ $imgWidth }}</p>
-{{ with $.Page.Param ($gal) }}
+{{- with $.Page.Param ($gal) }}
 <ul class="sc-gallery" role="list"
  {{- with $colWidth}} style="--min-col-width: {{ . }}"{{ end -}}
  >
-    {{ range . }}
+    {{- range . }}
     {{- $itemImg := resources.Get (path.Join "images" .file) -}}
     {{- if $itemImg }}
     {{- $tmbImg := $itemImg.Fill (printf  "%.0fx%.0f webp" $imgWidth $imgWidth) }}
@@ -18,8 +17,8 @@
         <img src="{{ $tmbImg.RelPermalink }}" alt="{{ .alt }}">        
     </li>
     {{- end }}
-    {{ end }}
+    {{- end }}
 </ul>
-{{ else }}
-{{ errorf "Gallery %q not found" $gal }}
-{{ end}}
+{{- else }}
+{{- errorf "Gallery %q not found" $gal }}
+{{- end}}
