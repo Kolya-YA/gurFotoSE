@@ -11,7 +11,7 @@ menu:
       weight: 60
 
 gal01:
-  - file: datenloeschung.jpg
+  - file: 1B7W8411-bunner.webp
     alt: "File one"
   - file: datenloeschung.jpg
     alt: "File two"
