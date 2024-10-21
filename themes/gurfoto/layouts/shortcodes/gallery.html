@@ -1,24 +1,55 @@
-{{- $gal := .Get 0 }}
+{{- .Page.Store.Set "sc-gallery" true }}
+{{- $galName := .Get 0 }}
+{{- $gal := slice }}
 {{- $colWidth := .Get 1}}
 {{- $imgWidth := default 240 (replaceRE "[^0-9]+" "" $colWidth) }}
 {{- $imgWidth = cast.ToInt $imgWidth }}
 {{- $imgWidth = mul $imgWidth 1.5 }}
 {{- $imgWidth = add $imgWidth 8 }}
 
-{{- with $.Page.Param ($gal) }}
-<ul class="sc-gallery" role="list"
- {{- with $colWidth}} style="--min-col-width: {{ . }}"{{ end -}}
- >
+{{- with $.Page.Param ($galName) }}
     {{- range . }}
-    {{- $itemImg := resources.Get (path.Join "images" .file) -}}
-    {{- if $itemImg }}
-    {{- $tmbImg := $itemImg.Fill (printf  "%.0fx%.0f webp" $imgWidth $imgWidth) }}
+        {{- $itemImg := resources.Get (path.Join "images" .file) -}}
+        {{- if $itemImg }}
+            {{- $thumbImg := $itemImg.Fill (printf  "%.0fx%.0f webp" $imgWidth $imgWidth) }}
+            {{- $largeImg := $itemImg.Resize "1200x webp" }}
+            {{- $mediumImg := $itemImg.Resize "800x webp" }}
+            {{- $smallImg := $itemImg.Resize "600x webp" }}
+            {{- $legacyImg := $itemImg.Resize "800x jpg" }}
+            {{- $gal = $gal | append (dict
+                "thumbLink" $thumbImg.RelPermalink
+                "largeLink" $largeImg.RelPermalink
+                "mediumLink" $mediumImg.RelPermalink
+                "smallLink" $smallImg.RelPermalink
+                "legacyLink" $legacyImg.RelPermalink
+                "alt" .alt
+                ) }}
+        {{- end }}
+    {{- end }}
+    {{- else }}
+    {{- errorf "Gallery %q not found" $galName }}
+{{- end }}
+
+<p>Gallery length: {{ len $gal }}</p>
+{{- if gt (len $gal) 0 }}
+<ul class="sc-gallery" role="list" {{- with $colWidth}}
+    style="--min-col-width: {{ . }}" {{ end -}}>
+    {{- range $gal }}
     <li class="sc-gallery__item">
-        <img src="{{ $tmbImg.RelPermalink }}" alt="{{ .alt }}">        
+        <img src="{{ .thumbLink }}" alt="{{ .alt }}"
+            data-largeLink="{{ .largeLink }}"
+            data-mediumLink="{{ .mediumLink }}"
+            data-smallLink="{{ .smallLink }}"
+            data-legacyLink="{{ .legacyLink }}"
+        >
     </li>
     {{- end }}
-    {{- end }}
 </ul>
-{{- else }}
-{{- errorf "Gallery %q not found" $gal }}
-{{- end}}
+{{- end }}
+
+<dialog class="sc-gallery__dialog">
+    <picture>
+        <img src="" alt="">
+    </picture>
+    <button autofocus aria-label="Close" class="sc-gallery__dialog-close">&times</button>
+</dialog>
