@@ -1,28 +1,24 @@
 :root, ::backdrop {
     /* Colors */
     --accent-hue: 101; // 101
-    --accent-sat: 0%; // 58%
+    --accent-sat: 58%;
     
     --bg-hue: 94; // 94
-    --bg-light-sat: 0%; // 73%
-    --bg-dark-sat: 0%; // 11%
+    --bg-light-sat: 73%;
+    --bg-dark-sat: 11%;
 
     --link-hue: 240; // 240
-    --link-sat: 0%; // 33%
+    --link-sat: 33%;
 
     --light-text-color: hsl(0 0% 98%);
     --dark-text-color: hsl(0 0% 20%);
-    
-    --warning-color: hsl(348 56% 47%);
-
-
-// Ниже ничего не править !!!
 
     --accent-color-night: hsl(var(--accent-hue) var(--accent-sat) 16%);
     --accent-color-dark: hsl(var(--accent-hue) var(--accent-sat) 26%);
     --accent-color: hsl(var(--accent-hue) var(--accent-sat) 46%);
     --accent-color-light: hsl(var(--accent-hue) var(--accent-sat) 66%);
     
+    --warning-color: hsl(348 56% 47%);
     
     --dark-bg-color-dark: hsl(var(--bg-hue) var(--bg-dark-sat) 6%);
     --dark-bg-color: hsl(var(--bg-hue) var(--bg-dark-sat) 26%);

@@ -11,13 +11,17 @@ menu:
       parent: Фотографии
       weight: 10
 
+# TopLeft, Top, TopRight, Left, Center, Right, BottomLeft, Bottom, BottomRight
+
 gal01:
   - file: portrait/_89Z8353.webp
     alt: "File one"
+    anchor: "Top"
   - file: portrait/_89Z8392.webp
     alt: "File two"
   - file: portrait/1B7W2539.webp
     alt: "File three"
+    anchor: "Bottom"
   - file: portrait/1B7W2551.webp
     alt: "File one"
   - file: portrait/1B7W4430.webp
@@ -30,6 +34,7 @@ gal01:
     alt: "File two"
   - file: portrait/1B7W6211.webp
     alt: "File three"
+    anchor: "Top"
   - file: portrait/1B7W6270.webp
     alt: "File one"
   - file: portrait/1B7W6390.webp

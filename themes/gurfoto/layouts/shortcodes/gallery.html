@@ -7,10 +7,8 @@
 {{- $imgWidth = mul $imgWidth 1.5 }}
 {{- $imgWidth = add $imgWidth 8 }}
 
-<p>{{ $galName }}</p>
 {{- with $.Page.Param ($galName) }}
     {{- range . }}
-    <p>{{ len . }}</p>
         {{- $itemImg := resources.Get (path.Join "images" .file) -}}
         {{- if $itemImg }}
             {{- $anchor := default "Smart" .anchor}}
@@ -33,7 +31,6 @@
     {{- errorf "Gallery %q not found" $galName }}
 {{- end }}
 
-<p>Gallery length: {{ len $gal }}</p>
 {{- if gt (len $gal) 0 }}
 <ul class="sc-gallery" role="list" {{- with $colWidth}}
     style="--min-col-width: {{ . }}" {{ end -}}>
