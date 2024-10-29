@@ -14,15 +14,22 @@ const galleries = document.querySelectorAll(".sc-gallery");
 const dialog = document.querySelector(".gallery-dialog");
 const dialogCloseBtn = dialog.querySelector(".gallery-dialog__close");
 const dialogPic = dialog.querySelector("picture");
-const dialogLegacyImg = dialogPic.querySelector("img");
+const legacyImg = dialogPic.querySelector("#legacyImg");
+const largeImg = dialogPic.querySelector("#largeImg");
+const mediumImg = dialogPic.querySelector("#mediumImg");
+const smallImg = dialogPic.querySelector("#smallImg");
 let scrollPosition = 0;
 
 galleries.forEach((gallery) => {
 	gallery.addEventListener("click", (e) => {
 		if (e.target.tagName === "IMG") {
-			console.log(e.target.dataset);
-			dialogLegacyImg.src = e.target.dataset.legacylink;
-			dialogLegacyImg.alt = e.target.alt;
+			const links = e.target.dataset;
+			console.log(links.largelink);
+			largeImg.srcset = links.largelink;
+			mediumImg.srcset = links.mediumlink;
+			smallImg.srcset = links.smalllink;
+			legacyImg.src = links.legacylink;
+			legacyImg.alt = e.target.alt;
 			openDialog();
 		}
 	});

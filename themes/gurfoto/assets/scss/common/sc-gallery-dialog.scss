@@ -1,13 +1,12 @@
 .gallery-dialog {
-    position: relative;
-    max-width: calc(100wh - 2 * var(--main-gap));
+    // position: relative;
+    max-width: calc(100vw - 2 * var(--main-gap));
     max-height: calc(100vh - 2 * var(--main-gap));
     margin: auto;
     padding: 0;
     overflow: hidden;
     border: none;
     border-radius: var(--border-radius);
-    object-fit: contain;
 
     &::backdrop {
         background: linear-gradient(45deg, var(--accent-color-dark), var(--link-color-dark));
@@ -15,9 +14,14 @@
         opacity: 0.9;
     }
 
-    picture, img {
-        max-height: 100%;
+    picture {
         margin: 0;
+    }
+
+    img {
+        max-width: 100%;
+        max-height: calc(100vh - 2 * var(--main-gap));
+        object-fit: contain;
     }
 
     .gallery-dialog__close {
