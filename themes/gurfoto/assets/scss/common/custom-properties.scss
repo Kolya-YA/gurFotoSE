@@ -1,14 +1,14 @@
 :root, ::backdrop {
     /* Colors */
     --accent-hue: 101; // 101
-    --accent-sat: 58%;
+    --accent-sat: 0%; //58%
     
     --bg-hue: 94; // 94
-    --bg-light-sat: 73%;
-    --bg-dark-sat: 11%;
+    --bg-light-sat: 0%; // 73%
+    --bg-dark-sat: 0%; // 11%
 
     --link-hue: 240; // 240
-    --link-sat: 33%;
+    --link-sat: 0%; // 33%
 
     --light-text-color: hsl(0 0% 98%);
     --dark-text-color: hsl(0 0% 20%);
