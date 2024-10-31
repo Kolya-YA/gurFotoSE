@@ -11,33 +11,33 @@ menu:
       weight: 60
 
 gal01:
-  - file: 1B7W8411-bunner.webp
-    alt: "File one"
-  - file: datenloeschung.jpg
-    alt: "File two"
-  - file: datenloeschung.jpg
-    alt: "File three"
-  - file: datenloeschung.jpg
-    alt: "File one"
-  - file: datenloeschung.jpg
-    alt: "File two"
-  - file: datenloeschung.jpg
-    alt: "File three"
-  - file: datenloeschung.jpg
-    alt: "File one"
-  - file: datenloeschung.jpg
-    alt: "File two"
-  - file: datenloeschung.jpg
-    alt: "File three"
-  - file: datenloeschung.jpg
-    alt: "File one"
-  - file: datenloeschung.jpg
-    alt: "File two"
-  - file: datenloeschung.jpg
-    alt: "File three"
+  - file: animal/IMG_7076-1.webp
+    alt: "Кот породы Невская маскарадная"
+  - file: animal/1B7W8983.webp
+    alt: "Летучая лисица в полете"
+  - file: animal/1B7W8494.webp
+    alt: "Бенгальский тигр"
+  - file: animal/1B7W8723.webp
+    alt: "Пеликан рядом с лодкой"
+  - file: animal/1B7W8937.webp
+    alt: "Шимпанзе с детенышем"
+    anchor: "Right"
+  - file: animal/1B7W9041.webp
+    alt: "Лев крупным планом"
+  - file: animal/1B7W9064.webp
+    alt: "Пара сурикатов"
+    anchor: "Center"
+  - file: animal/1B7W9088.webp
+    alt: "Пара носорогов"
+    anchor: "Left"
+  - file: animal/1B7W9094.webp
+    alt: "Взрослый орангутанг"
+  - file: animal/1B7W9265.webp
+    alt: "Балийский голубь"
+  - file: animal/1B7W9697.webp
+    alt: "Семья мартышек"
 ---
 
 Фотосъемка животных — жанр, близкий к портрету, который позволяет запечатлеть красоту и индивидуальность ваших питомцев. Мы создаем яркие и эмоциональные изображения, которые передают характер и настроение ваших четвероногих друзей. Мы работаем как с домашними, так и с дикими животными, создавая уникальные моменты.
 
 {{< gallery "gal01" >}}
-{{< gallery "gal01" "100px" >}}
