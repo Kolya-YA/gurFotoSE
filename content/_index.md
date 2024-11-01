@@ -1,7 +1,7 @@
 ---
 titLe: Профессиональная фотосъемка
-description: ""
-date: 2024-02-20
+description: "Все жанры фотосъемки, опытные фотографы, оперативное исполнение"
+date: 2024-11-20
 
 infoSection: "home-info/index.md"
 ---
