@@ -8,27 +8,28 @@
 {{- $imgWidth = add $imgWidth 8 }}
 
 {{- with $.Page.Param ($galName) }}
-    {{- range . }}
-        {{- $itemImg := resources.Get (path.Join "images" .file) -}}
-        {{- if $itemImg }}
-            {{- $anchor := default "Smart" .anchor}}
-            {{- $thumbImg := $itemImg.Fill (printf  "%.0fx%.0f webp %s" $imgWidth $imgWidth $anchor) }}
-            {{- $largeImg := $itemImg.Resize "1200x webp" }}
-            {{- $mediumImg := $itemImg.Resize "800x webp" }}
-            {{- $smallImg := $itemImg.Resize "600x webp" }}
-            {{- $legacyImg := $itemImg.Resize "800x jpg" }}
-            {{- $gal = $gal | append (dict
-                "thumbLink" $thumbImg.RelPermalink
-                "largeLink" $largeImg.RelPermalink
-                "mediumLink" $mediumImg.RelPermalink
-                "smallLink" $smallImg.RelPermalink
-                "legacyLink" $legacyImg.RelPermalink
-                "alt" .alt
-                ) }}
-        {{- end }}
-    {{- end }}
-    {{- else }}
-    {{- errorf "Gallery %q not found" $galName }}
+{{- range . }}
+{{- $itemImg := resources.Get (path.Join "images" .file) -}}
+{{- if $itemImg }}
+{{- $anchor := default "Smart" .anchor}}
+{{- $thumbImg := $itemImg.Fill (printf "%.0fx%.0f webp %s" $imgWidth
+$imgWidth $anchor) }}
+{{- $largeImg := $itemImg.Resize "1200x webp" }}
+{{- $mediumImg := $itemImg.Resize "800x webp" }}
+{{- $smallImg := $itemImg.Resize "600x webp" }}
+{{- $legacyImg := $itemImg.Resize "800x jpg" }}
+{{- $gal = $gal | append (dict
+"thumbLink" $thumbImg.RelPermalink
+"largeLink" $largeImg.RelPermalink
+"mediumLink" $mediumImg.RelPermalink
+"smallLink" $smallImg.RelPermalink
+"legacyLink" $legacyImg.RelPermalink
+"alt" .alt
+) }}
+{{- end }}
+{{- end }}
+{{- else }}
+{{- errorf "Gallery %q not found" $galName }}
 {{- end }}
 
 {{- if gt (len $gal) 0 }}
@@ -40,16 +41,18 @@
             data-largeLink="{{ .largeLink }}"
             data-mediumLink="{{ .mediumLink }}"
             data-smallLink="{{ .smallLink }}"
-            data-legacyLink="{{ .legacyLink }}"
-        >
+            data-legacyLink="{{ .legacyLink }}">
     </li>
     {{- end }}
 </ul>
 {{- end }}
 
-<dialog class="sc-gallery__dialog">
+<dialog class="gallery-dialog">
     <picture>
-        <img src="" alt="">
+        <source id="largeImg" media="(min-width: 1240px)">
+        <source id="mediumImg" media="(min-width: 840px)">
+        <source id="smallImg">
+        <img id="legacyImg">
     </picture>
-    <button autofocus aria-label="Close" class="sc-gallery__dialog-close">&times</button>
+    <button aria-label="Close" class="gallery-dialog__close">✕</button>
 </dialog>

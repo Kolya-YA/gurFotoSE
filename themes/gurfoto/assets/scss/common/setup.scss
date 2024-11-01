@@ -27,6 +27,15 @@ body {
     -webkit-font-smoothing: antialiased;
     background-color: var(--light-bg-color);
     color: var(--dark-text-color);
+
+    &.dialog-open {
+        overflow: hidden;
+        /* Prevent width changes due to missing scrollbar */
+        padding-right: calc(100vw - 100%);
+        /* Prevent iOS bounce scroll effect */
+        position: fixed;
+        width: 100%;
+    }
 }
 
 a:not([class]) {
