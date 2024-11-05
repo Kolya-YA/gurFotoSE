@@ -1,5 +1,5 @@
 # Do not change!
-baseURL = ''
+baseURL = 'https://gurfoto.ru/'
 # Do not change! 
 defaultContentLanguage = 'ru'
 # SEO — text for title tag in head section
@@ -13,6 +13,7 @@ disableKinds = ["taxonomy", "term"]
 enableRobotsTXT = true
 
 [params]
+    skipToContentText = "Перейти к содержимому"
     heroTitle = "Фотоагентство"
     # SEO — text for meta description
     description = "Портрет, интерьерная, предметная, архитектурная, панорамная и рекламная съемка. Проект: Фотошкола в Ростове"
@@ -26,18 +27,20 @@ enableRobotsTXT = true
     email = "biggur@mail.ru"
     # Used in the footer
     phones = [
-        "+7 919 874 20 24",
-        
+        "+7 919 874 20 24"        
     ]
     # Used in the footer
-    address = [
-        
+    address = [        
     ]
     # Used in the footer, google map route url
     mapRoute =  "" 
     
     # Name of the image for the hero section on home page. Image is located ./assets/images/
     heroBackground = "1-40.webp"
+
+    # Blog/news section
+    blogNewsHeader = "Новости и статьи"
+    qtyBlogNews = 6
 
 # Do not change!
 [privacy]
