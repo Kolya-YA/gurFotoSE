@@ -39,8 +39,9 @@ enableRobotsTXT = true
     heroBackground = "1-40.webp"
 
     # Blog/news section
-    blogNewsHeader = "Новости и статьи"
+    blogNewsHeader = "Новости"
     qtyBlogNews = 6
+    readAllNews = "Читать все новости"
 
 # Do not change!
 [privacy]
