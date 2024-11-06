@@ -8,7 +8,7 @@ date: 2024-10-13
 
 menu:
     top:
-        weight: 50
+        weight: 68
         name: Прайс
     service:
         weight: 50

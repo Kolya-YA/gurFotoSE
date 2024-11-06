@@ -6,10 +6,10 @@ date: 2024-02-22
 
 menu:
   top:
-      weight: 60
+      weight: 64
       name: Статьи
   info:
-      weight: 130
+      weight: 64
 ---
 
 ## Наши публикации

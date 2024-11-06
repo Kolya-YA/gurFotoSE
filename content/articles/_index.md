@@ -8,9 +8,9 @@ date: 2023-02-17
 
 menu:
     top:
-        weight: 40
+        weight: 180
     service:
-        weight: 40
+        weight: 180
 ---
 
 ## Наши публикации
