@@ -17,7 +17,9 @@ menu:
 panos01:
   - file: google_pano/ProfFit.jpg
     alt: "Фитнес Профессионал. Виртуальный тур в Google"
-    link: "https://www.google.com/maps/@47.2732377,39.7189315,3a,82.2y,303.96h,93.71t/data=!3m8!1e1!3m6!1sAF1QipOp4BIa95QWePtsfh1C4eWu0l5IW5Dv-G9X4h95!2e10!3e12!6s%2F%2Flh5.ggpht.com%2Fp%2FAF1QipOp4BIa95QWePtsfh1C4eWu0l5IW5Dv-G9X4h95%3Dw900-h600-k-no-pi-3.7099999999999937-ya273.6799993133545-ro0-fo100!7i7308!8i3654?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D"
+    link: "https://maps.app.goo.gl/FomJFCLZbVW3DN2s5"
+    iframe: "<iframe src="https://www.google.com/maps/embed?pb=!4v1731331239913!6m8!1m7!1sCAoSLEFGMVFpcE9wNEJJYTk1UVdlUHRzZmgxQzRlV3UwbDVJVzVEdi1HOVg0aDk1!2m2!1d47.27323774703095!2d39.71893151343434!3f303.96!4f3.7099999999999937!5f0.5970117501821992" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+    
   - file: google_pano/Anabel-Arto.jpg
     alt: "Anabel Arto. Магазин нижнего белья. Виртуальный тур в Google"
     link: "https://www.google.com/maps/@47.204,39.7242782,3a,82.2y,275.63h,85.41t/data=!3m8!1e1!3m6!1sAF1QipOlXqTI0p1fczXHewvhwqmsPpCqa-Lwwq3A7nPt!2e10!3e12!6s%2F%2Flh5.ggpht.com%2Fp%2FAF1QipOlXqTI0p1fczXHewvhwqmsPpCqa-Lwwq3A7nPt%3Dw900-h600-k-no-pi4.594776950275886-ya167.21309771291112-ro0-fo100!7i7340!8i3670?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D"
