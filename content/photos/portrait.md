@@ -5,6 +5,8 @@ metaTitle: "Портретная съемка"
 description: "Одним из важных направлений в деятельности агентства GurFoto.Ru является портретная съемка"
 date: 2024-10-11
 
+price: "price-portrait.md"
+
 
 menu:
   top:
