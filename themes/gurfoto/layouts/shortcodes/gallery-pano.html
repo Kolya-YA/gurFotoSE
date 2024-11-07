@@ -28,7 +28,7 @@
     style="--min-col-width: {{ . }}px" {{ end -}}>
     {{- range $gal }}
     <li class="sc-gallery__item">
-        <a href="{{ .link }}" target="_blank">
+        <a {{- with .link }} href="{{ . }}" target="_blank" {{- end }}>
             <img src="{{ .thumbLink }}" alt="{{ .alt }}">
         </a>
     </li>
