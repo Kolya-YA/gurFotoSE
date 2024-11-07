@@ -5,7 +5,7 @@
 {{- with .CurrentSection.Params.Price }}
     {{- $priceURL = path.Join $.CurrentSection.RelPermalink "#price"  }}
     {{- with $headless.Resources.GetMatch . }}
-        {{- $priceTitle = .Title }}
+        {{- $priceTitle = default .Title .Params.BtnText }}
         {{ else }}
         {{- $priceTitle = "Прайс" }}
     {{- end }}
