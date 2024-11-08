@@ -4,6 +4,7 @@ metaTitle: "Портфолио фотографического агентств
 description: "Агентство GurFoto.Ru создает фотографии разных жанров и направлений, в диапазоне от художественной до технической съемки"
 date: 2024-10-11
 cover_img: "Collag2.webp"
+price: "price-virtual-tours.md"
 
 menu:
   top:

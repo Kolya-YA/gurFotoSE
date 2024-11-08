@@ -1,19 +1,18 @@
 ---
-title: "Услуги"
+title: "Стоимость услуг"
 metaTitle: "Фотоуслуги, предоставляемые агентством"
 description: "Спектр фотоуслуг, предоставляемых агентством GurFoto.Ru, включает различные виды фотосъемки и обучение фотографов"
 cover_img: "img5.webp"
 cover_img_credits: ""
 date: 2024-10-13
 
-price: "price-services.md"
-
 menu:
     top:
         weight: 50
-        idetifier: "datenrettung"
+        name: Прайс
     service:
         weight: 50
+        name: Прайс
 ---
 
 ## Услуги, которые мы предлагаем

@@ -9,17 +9,4 @@
         </a>
     </li>
     {{- end }}
-    {{- range $i, $page := index site.Menus . }}
-        {{- with .Page.Params.price }}
-            {{- $headless := site.GetPage "/headless" }}
-            {{- with $headless.Resources.GetMatch .  }}
-                {{ if eq $i 0 }}<li><hr></li>{{ end }}
-                <li class="footer-nav__item">
-                    <a  class="footer-nav__link" href='{{ path.Join $page.URL "/#price" }}'>
-                        {{- .Title -}}        
-                    </a>
-                </li>
-            {{- end }}
-        {{- end }}
-    {{- end }}
 </ul>
