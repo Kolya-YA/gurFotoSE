@@ -5,7 +5,7 @@ description: "Агентство GurFoto.Ru создает фотографии 
 date: 2024-10-11
 cover_img: "Collag2.webp"
 
-price: "price-portrait.md"
+price: "price-photos.md"
 
 menu:
   top:

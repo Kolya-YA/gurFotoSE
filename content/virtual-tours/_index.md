@@ -3,15 +3,15 @@ title: "Виртуальные туры"
 metaTitle: "Виртуальные туры ─ визуализация пространства бизнеса"
 description: "Виртуальные туры ─ эффективные способ визуализации пространства. Виртуальный тур, установленный на вашем корпоративном сайте, позволяет потенциальному клиенту создать положительный образ вашего бизнеса"
 date: 2024-10-13
-cover_img: "58-1.webp"
+cover_img: "58-1.jpg"
 
 price: "price-virtual-tours.md"
 
 menu:
   top:
-      weight: 20
+    weight: 20
   service:
-      weight: 20
+    weight: 20
 
 panos01:
   - file: google_pano/ProfFit.jpg
