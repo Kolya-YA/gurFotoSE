@@ -1,4 +1,7 @@
-/* Box sizing */
+:root {
+  interpolate-size: allow-keywords;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
