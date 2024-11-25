@@ -24,7 +24,7 @@
         background: 
             var(--scard-bg),
             // var(--dark-bg-gradient, var(--dark-bg-color));
-            var(--accent-color-night);
+            var(--accent-color-dark);
         background-blend-mode: overlay;
         background-repeat: repeat-x;
         background-size: cover;
@@ -33,7 +33,7 @@
 
         &__title {
             margin-block-start: var(--main-gap);
-            margin-block-end: calc(var(--main-gap) * 4);
+            margin-block-end: calc(var(--main-gap) * 3);
             text-align: center;
         }
         
@@ -42,7 +42,7 @@
         }
 
         &:is(:hover, :focus-visible) {
-            background-color: var(--link-color-dark);
+            background-color: var(--accent-color-night);
         }
     }
 

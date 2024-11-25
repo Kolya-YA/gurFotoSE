@@ -11,7 +11,7 @@
                 {{- $scardBg := .Page.Resources.GetMatch .Page.Params.cover_img }}
                 <li class="services__item">
                     {{- if $scardBg }}
-                    {{- $scardBg = $scardBg.Resize "320x webp q40" }}
+                    {{- $scardBg = $scardBg.Resize "320x webp q68" }}
                     <a href="{{ .URL }}"
                         class="scard scard--bg"
                         style="--scard-bg: url('{{ $scardBg.RelPermalink }}')">
