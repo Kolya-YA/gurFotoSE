@@ -8,8 +8,9 @@ menu:
   top:
       weight: 64
       name: Статьи
-  info:
+  service:
       weight: 64
+      name: Статьи
 ---
 
 ## Наши публикации

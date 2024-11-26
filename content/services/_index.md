@@ -10,6 +10,9 @@ menu:
     top:
         weight: 68
         name: Прайс
+    service:
+        weigth: 68
+        name: Прайс
 ---
 
 ## Услуги, которые мы предлагаем
