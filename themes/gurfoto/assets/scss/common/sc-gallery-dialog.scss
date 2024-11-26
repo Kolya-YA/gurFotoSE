@@ -18,6 +18,12 @@
         margin: 0;
     }
 
+    iframe {
+        min-width: calc(100vw - 4 * var(--main-gap));
+        min-height: calc(100vh - 4 * var(--main-gap));
+        object-fit: contain;
+    }
+
     img {
         max-width: 100%;
         max-height: calc(100vh - 2 * var(--main-gap));
@@ -39,4 +45,10 @@
         display: grid;
         place-content: center;
     }
+
+    &:has(iframe) {
+        .gallery-dialog__close {
+            inset-inline-end: calc(var(--main-gap) * 4);
+        }
+    } 
 }

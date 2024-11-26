@@ -14,6 +14,11 @@ menu:
   service:
     weight: 30
 
+panos02:
+  - file: google_pano/ProfFit.jpg
+    alt: "Фитнес Профессионал. Виртуальный тур в Google"
+    iframeSrc: 'https://www.google.com/maps/embed?pb=!4v1731331239913!6m8!1m7!1sCAoSLEFGMVFpcE9wNEJJYTk1UVdlUHRzZmgxQzRlV3UwbDVJVzVEdi1HOVg0aDk1!2m2!1d47.27323774703095!2d39.71893151343434!3f303.96!4f3.7099999999999937!5f0.5970117501821992'
+
 panos01:
   - file: google_pano/ProfFit.jpg
     alt: "Фитнес Профессионал. Виртуальный тур в Google"
@@ -44,4 +49,4 @@ panos01:
 
 Мы предлагаем эффективную форму презентацию вашего бизнеса на карте Google. Такое представление дает возможность потенциальным клиентам получить впечатление об услугах, которые вы предлагаете, совершив виртуальное путешествие.
 
-{{< gallery-pano panos01 >}}
+{{< gallery-pano panos02 >}}
