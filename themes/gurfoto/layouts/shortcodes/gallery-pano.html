@@ -1,3 +1,4 @@
+{{- .Page.Store.Set "sc-pano-gallery" true }}
 {{- $galName := .Get 0 }}
 {{- $gal := slice }}
 {{- $colWidth := default 280 (.Get 1) }}
@@ -15,7 +16,7 @@
             {{- $gal = $gal | append (dict
                 "thumbLink" $thumbImg.RelPermalink
                 "alt" .alt
-                "link" .link
+                "iframeSrc" .iframeSrc
             ) }}
         {{- end }}
     {{- end }}
@@ -28,10 +29,16 @@
     style="--min-col-width: {{ . }}px" {{ end -}}>
     {{- range $gal }}
     <li class="sc-gallery__item">
-        <a {{- with .link }} href="{{ . }}" target="_blank" {{- end }}>
-            <img src="{{ .thumbLink }}" alt="{{ .alt }}">
-        </a>
+        <img src="{{ .thumbLink }}" alt="{{ .alt }}" data-iframesrc="{{ .iframeSrc }}">
     </li>
     {{- end }}
 </ul>
 {{- end }}
+
+<dialog class="gallery-dialog">
+    <iframe
+        src=""
+        style="border:0;" allowfullscreen=""
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <button aria-label="Close" class="gallery-dialog__close">✕</button>
+</dialog>
