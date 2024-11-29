@@ -1,7 +1,7 @@
 ---
 title: "Стоимость услуг"
 metaTitle: "Фотоуслуги, предоставляемые агентством"
-description: "Стоимость фотоуслуг, предоставляемых агентством GurFoto.Ru"
+description: "Стоимость фотоуслуг, предоставляемых специалистами агентства GurFoto.Ru"
 cover_img: "img5.webp"
 cover_img_credits: ""
 date: 2024-10-13
