@@ -19,13 +19,13 @@ panos01:
     iframeSrc: 'https://gurfoto.ru/vtour/utkino/'
   - file: virtual_pano/aldo_coppola.jpg
     alt: "Салон Aldo Coppola"
-    iframeSrc: 'https://gurfoto.ru/vtour/aldocoppola/tourl.html/'
+    iframeSrc: 'https://gurfoto.ru/vtour/aldocoppola/tourl.html'
   - file: virtual_pano/sfu_sport.jpg
     alt: "Спортивный комплекс Меридиан. ЮФУ"
-    iframeSrc: "https://gurfoto.ru/vtour/aldocoppola/meridian/"
+    iframeSrc: "https://gurfoto.ru/vtour/meridian/"
   - file: virtual_pano/art_rostov.jpg
     alt: "Выставка Арт Ростов"
-    iframeSrc: "https://gurfoto.ru/vtour/aldocoppola/artrostov/index.html"
+    iframeSrc: "https://gurfoto.ru/vtour/artrostov/index.html"
 ---
 
 ## Создание туров
