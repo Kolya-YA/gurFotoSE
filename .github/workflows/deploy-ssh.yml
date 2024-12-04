@@ -37,17 +37,24 @@ jobs:
         run: |
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+
       - name: Install Dart Sass Embedded
         run: sudo snap install dart-sass-embedded
-      - name: Install lftp
-        run: sudo apt-get update && sudo apt-get install -y lftp
+      
+      - name: Install rclone
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y rclone
+      
       - name: Checkout
         uses: actions/checkout@v4
         with:
           submodules: recursive
           fetch-depth: 0
+      
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
@@ -60,19 +67,23 @@ jobs:
             --minify \
             --baseURL https://gurfoto.ru/
 
-      - name: Deploy to SFTP server
-        env:
-          SFTP_USERNAME: ${{ secrets.SFTP_USERNAME }}
-          SFTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
-          SFTP_HOST: ${{ secrets.SFTP_HOST }}
-          SFTP_PORT: ${{ secrets.SFTP_PORT }}
-          SFTP_TARGET_DIR: ${{ secrets.SFTP_TARGET_DIR }}
-          SFTP_LOCAL_DIR: ${{ secrets.SFTP_LOCAL_DIR }}
+      - name: Create rclone config
         run: |
-          lftp -u $SFTP_USERNAME,$SFTP_PASSWORD sftp://$SFTP_HOST:$SFTP_PORT <<EOF
-          mirror -R $SFTP_LOCAL_DIR $SFTP_TARGET_DIR \
-            --exclude-glob logs/ \
-            --exclude-glob uploads/ \
-            --delete-excluded
-          bye
+          mkdir -p ~/.config/rclone
+          cat > ~/.config/rclone/rclone.conf << EOF
+          [sftp]
+          type = sftp
+          host = ${{ secrets.SFTP_HOST }}
+          user = ${{ secrets.SFTP_USERNAME }}
+          pass = ${{ secrets.SFTP_PASSWORD }}
           EOF
+
+      - name: Deploy with rclone
+        run: |
+          rclone sync \
+            "${{ secrets.SFTP_LOCAL_DIR }}" \
+            "sftp:${{ secrets.SFTP_TARGET_DIR }}" \
+            --exclude "/vtour/**" \
+            --filter "- /vtour/**" \
+            --progress \
+            --stats 1s
