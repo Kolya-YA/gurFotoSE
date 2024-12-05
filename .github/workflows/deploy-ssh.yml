@@ -67,8 +67,6 @@ jobs:
             --sftp-host=${{ secrets.SFTP_HOST }} \
             --sftp-user=${{ secrets.SFTP_USERNAME }} \
             --sftp-pass=${{ secrets.SFTP_PASSWORD }} \
-            --verbose \
             --exclude "/vtour/**" \
             --filter "- /vtour/**" \
-            --progress \
             --stats 1s
