@@ -13,32 +13,32 @@ menu:
 # TopLeft, Top, TopRight, Left, Center, Right, BottomLeft, Bottom, BottomRight
 
 gal01:
-  - file: Architectural/1B7W2300.webp
+  - file: architectural/1B7W2300.webp
     alt: "Загородная усадьба на берегу пруда"
-  - file: Architectural/1B7W2315.webp
+  - file: architectural/1B7W2315.webp
     alt: "Рубленный дом с участком ландшафта. Дизайнерский проект"
-  - file: Architectural/1B7W2422.webp
+  - file: architectural/1B7W2422.webp
     alt: "Комплекс деревянных строений на берегу пруда. Дизайнерский проект"
     anchor: "Top"
-  - file: Architectural/1B7W2427.webp
+  - file: architectural/1B7W2427.webp
     alt: "Ландшафтный дизайнерский проект"
-  - file: Architectural/1B7W2428.webp
+  - file: architectural/1B7W2428.webp
     alt: "Большое деревянное здание в ландшафтном парке"
-  - file: Architectural/1B7W2456.webp
+  - file: architectural/1B7W2456.webp
     alt: "Элементы ландшафтного дизайна"
     anchor: "TopLeft"
-  - file: Architectural/1B7W2477.webp
+  - file: architectural/1B7W2477.webp
     alt: "Дизанерский проект рубленного строения в парке"
     anchor: "Center"
-  - file: Architectural/8M6B0237.webp
+  - file: architectural/8M6B0237.webp
     alt: "Типовой детский игровой комплекс"
-  - file: Architectural/utkino.webp
+  - file: architectural/utkino.webp
     alt: "Мост, элемент ландшафтного дизайна"
     anchor: "Right"
-  - file: Architectural/utkino-11.webp
+  - file: architectural/utkino-11.webp
     alt: "Открытый бассейн"
     anchor: "Center"
-  - file: Architectural/utkino-37.webp
+  - file: architectural/utkino-37.webp
     alt: "Общий вид на акваторию загородного клуба"  
 ---
 
