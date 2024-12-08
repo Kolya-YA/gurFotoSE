@@ -40,7 +40,7 @@ enableRobotsTXT = true
 
     # Blog/news section
     blogNewsHeader = "Статьи"
-    qtyBlogNews = 6
+    qtyBlogNews = 7
     readAllNews = "Читать все статьи"
 
 # Do not change!
