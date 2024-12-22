@@ -1,4 +1,5 @@
 RewriteEngine On
+#ErrorDocument 404 http://gurfoto.ru
 ErrorDocument 404 /404.html
 Redirect 301 /practical-photography-5/ https://gurfoto.ru/blog/
 Redirect 301 /google-panorama/ https://gurfoto.ru/googlepano/
