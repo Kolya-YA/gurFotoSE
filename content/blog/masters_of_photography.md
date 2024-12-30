@@ -249,5 +249,5 @@ date: 2024-12-27
 
 **Удачи вам!** Фотография — это путешествие, и его стоит пройти!
 
-**P.S. Та самая страница** [***https://school.gurfoto.ru/invisibility/***](https://school.gurfoto.ru/invisibility/)
+**P.S. Та самая страница** [***https://school.gurfoto.ru/invisibility/***](https://school.gurfoto.ru/invisibility/)  
 *Статья с сокращениями опубликована 18.04.2024*
