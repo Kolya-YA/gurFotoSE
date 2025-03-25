@@ -9,6 +9,7 @@
         background: transparent;
         border: none;
         cursor: pointer;
+        stroke: var(--light-text-color);
 
         &:is(:hover, :focus-visible) {
 

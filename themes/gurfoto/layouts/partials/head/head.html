@@ -23,8 +23,8 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta property="og:url" content="{{ .Permalink }}">
     <link rel="canonical" href="{{ .Permalink }}">
-    <link rel="icon" type="image/png" href="{{ "favicon-96x96.png" | absURL }}" sizes="96x96" />
     <link rel="icon" href="{{ "favicon.svg" | absURL }}" type="image/svg+xml">
+    <link rel="icon" type="image/png" href="{{ "favicon-96x96.png" | absURL }}" sizes="96x96" />
     <link rel="shortcut icon" href="{{ "favicon.ico" | absURL }}">
     <link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | absURL }}">
     <meta name="apple-mobile-web-app-title" content="{{ site.Params.name }}" />
@@ -34,6 +34,6 @@
     <meta name="robots" content="noindex, follow"> 
     {{- end }}
 
-    <meta name="theme-color" content="#5cb931">
+    <meta name="theme-color" content="#444a41">
     {{ partial "head/json-ld" (dict "p_title" $title "p_decsr" $description)  }}
 </head>
