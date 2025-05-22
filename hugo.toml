@@ -43,6 +43,8 @@ enableRobotsTXT = true
     qtyBlogNews = 7
     readAllNews = "Читать все статьи"
 
+    math = true          # или math.force = true
+
 # Do not change!
 [privacy]
   [privacy.googleAnalytics]
@@ -50,10 +52,21 @@ enableRobotsTXT = true
     respectDoNotTrack = false
 
 [markup]
-  [markup.tableOfContents]
-    endLevel = 2
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [
+            ["\\[", "\\]"],
+            ["$$", "$$"]
+          ]
+          inline = [
+            ["\\(", "\\)"],
+            ["$", "$"]
+          ]
 
 [services]
   [services.googleAnalytics]
     ID = "GA4-364782959"
-    
+   

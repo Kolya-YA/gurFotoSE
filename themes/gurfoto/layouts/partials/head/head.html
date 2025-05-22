@@ -36,4 +36,15 @@
 
     <meta name="theme-color" content="#444a41">
     {{ partial "head/json-ld" (dict "p_title" $title "p_decsr" $description)  }}
+
+    {{ if .Site.Params.math }}
+  <script>
+    MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+{{ end }}
+
 </head>
