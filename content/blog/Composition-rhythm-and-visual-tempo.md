@@ -48,7 +48,7 @@ date: 2025-06-12
 
 - **Реверсивный ритм:** повторена форма, но с зеркальным отражением или поворотом (отражение в воде, тени от ветвей). Создаёт визуальное эхо.  
 *Пример: Edward Weston «Pepper No. 30» (1930)* — симметрия и зеркальное отражение форм болгарского перца.
-{{< imgr src="Composition-rhythm-and-visual-tempo/Composition-rhythm-and-visual-tempo 29.jpg" alt="Симметрия и зеркальное отражение форм болгарского перца. Автор Edward Weston" >}}
+{{< imgr src="Composition-rhythm-and-visual-tempo/Composition-rhythm-and-visual-tempo 23.jpg" alt="Симметрия и зеркальное отражение форм болгарского перца. Автор Edward Weston" >}}
 *Edward Weston*
 
 ### Формирование визуального темпа
