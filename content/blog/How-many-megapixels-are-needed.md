@@ -123,10 +123,10 @@ date: 2025-07-28
 
 Ниже — подборка известных мастеров и знаковых кадров, созданных на камеры с «умеренным» разрешением:
 
-- **Steve McCurry, «Афганская девушка»**
-Первая «Афганская девушка» была снята на Nikon D1X (5,4 Мп), а последующие кадры — на D2X (12,4 Мп). Эти портреты стали визитной карточкой National Geographic и доказали: важнее «глаз» фотографа, нежели цифры на корпусе камеры.
-{{< imgr src="How-many-megapixels-are-needed/How-many-megapixels-are-needed 2.jpg" alt="Автор Steve McCurry" >}}
-*Steve McCurry*
+- **Knut Koivisto**
+Кнут Койвисто — один из самых уважаемых шведских фотографов-портретистов, использует камеру Fujifilm X‑T1 (16 Мп, APS‑C).
+{{< imgr src="How-many-megapixels-are-needed/How-many-megapixels-are-needed 2.jpg" alt="Автор Knut Koivisto" >}}
+*Knut Koivisto*
 
 - **Magnum Photos, уличная фотография**
 Magnum-фотографы, такие как Alex Webb и Peter Turnley, активно использовали Leica M8 (10 Мп). Компактный корпус и непревзойдённая оптика позволяли им охватывать цвет, контрасты и сюжет без «тяжёлых» файлов.
