@@ -69,7 +69,7 @@ Burtynsky применяет насыщенные, неожиданные цве
 *Edward Burtynsky ─ Uranium Tailings, Elliot Lake, Ontario 1995*
 
 У **David LaChapelle** чрезмерная насыщенность и «поп»-тона создают сцену гиперреальности, где цвет становится драматургом и смыслотворцем одновременно.
-{{< imgr src="Why-color-is-more-important-than-plot/Why-color-is-more-important-than-plot 8.JPG" alt="David LaChapelle ─ Katy Perry, Siren and the Synthetic Sea, 2011" >}}
+{{< imgr src="Why-color-is-more-important-than-plot/Why-color-is-more-important-than-plot 8.jpg" alt="David LaChapelle ─ Katy Perry, Siren and the Synthetic Sea, 2011" >}}
 *David LaChapelle ─ Katy Perry, Siren and the Synthetic Sea, 2011*
 
 Кислотные пурпурно-синие тона и неоновые акценты создают гиперреалистичный мир; цвет подчёркивает искусственность и сатиру — морская тема выглядит одновременно декоративной и «загрязнённой», что усиливает смысловый контраст.
