@@ -1,7 +1,7 @@
 ---
 title: "Цвет в фотографии: как палитра управляет эмоцией кадра"
 description: "Как палитра меняет смысл кадра? Разбор ролей цвета в фотографии с примерами Eggleston, Wilkes, LaChapelle и четкими приёмами для вашей палитры."
-date: 2025-08-25
+date: 2025-08-26
 ---
 
 {{< imgr src="Why-color-is-more-important-than-plot/Why-color-is-more-important-than-plot 1.jpg" alt="Девушка катается на доске под парусом. Автор Ю.Гуревич" >}}
