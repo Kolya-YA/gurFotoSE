@@ -1,99 +1,99 @@
-name: Deploy Hugo site to server via SFTP
-
+name: Build and deploy
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   workflow_dispatch:
-
 permissions:
   contents: read
-
 concurrency:
-  group: deploy-hugo-sftp
+  group: deploy
   cancel-in-progress: true
-
 defaults:
   run:
     shell: bash
-
-env:
-  TZ: Europe/Moscow
-  HUGO_VERSION: 0.148.2
-  DART_SASS_VERSION: 1.90.0
-  HUGO_ENVIRONMENT: production
-  BASE_URL: https://gurfoto.ru/
-
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    env:
+      DART_SASS_VERSION: 1.90.0
+      HUGO_VERSION: 0.148.2
+      TZ: Europe/Moscow
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           submodules: recursive
           fetch-depth: 0
-
-      # Задаём HUGO_CACHEDIR без runner.temp — через $GITHUB_ENV
-      - name: Set Hugo cache dir
-        run: echo "HUGO_CACHEDIR=$GITHUB_WORKSPACE/.hugo_cache" >> "$GITHUB_ENV"
-
-      - name: Prepare local bin dir
-        run: mkdir -p "$HOME/.local" "$HOME/.local/bin"
-
       - name: Install Dart Sass
         run: |
           curl -sLJO "https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz"
-          tar -C "$HOME/.local" -xf "dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz"
+          tar -C "${HOME}/.local" -xf "dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz"
           rm "dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz"
-          echo "$HOME/.local/dart-sass" >> "$GITHUB_PATH"
-
-      - name: Install Hugo (extended)
+          echo "${HOME}/.local/dart-sass" >> "${GITHUB_PATH}"
+      - name: Install Hugo
         run: |
           curl -sLJO "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz"
-          mkdir -p "$HOME/.local/hugo"
-          tar -C "$HOME/.local/hugo" -xf "hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz"
+          mkdir -p "${HOME}/.local/hugo"
+          tar -C "${HOME}/.local/hugo" -xf "hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz"
           rm "hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz"
-          echo "$HOME/.local/hugo" >> "$GITHUB_PATH"
-
-      - name: Verify toolchain
-        run: |
-          sass --version
-          hugo version
-
-      - name: Build with Hugo
-        run: |
-          hugo --gc --minify --baseURL "$BASE_URL"
-
+          echo "${HOME}/.local/hugo" >> "${GITHUB_PATH}"
       - name: Install rclone
         run: |
           sudo apt-get update -y
           sudo apt-get install -y rclone
-
-      # Маскируем пароль, если он есть (проверка по env, не по secrets)
-      - name: Mask sensitive secrets in logs
-        env:
-          SFTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
-        if: ${{ env.SFTP_PASSWORD != '' }}
-        run: echo "::add-mask::${SFTP_PASSWORD}"
-
-      # деплой паролем (пароль "зашумляем" через rclone obscure)
-      - name: Deploy via rclone (SFTP with password)
-        env:
-          SFTP_HOST: ${{ secrets.SFTP_HOST }}
-          SFTP_USERNAME: ${{ secrets.SFTP_USERNAME }}
-          SFTP_TARGET_DIR: ${{ secrets.SFTP_TARGET_DIR }}
-          SFTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
+      - name: Verify installations
         run: |
-          rclone sync ./public :sftp:${SFTP_TARGET_DIR} \
-            --sftp-host="${SFTP_HOST}" \
-            --sftp-user="${SFTP_USERNAME}" \
-            --sftp-pass="$(rclone obscure "${SFTP_PASSWORD}")" \
+          echo "Dart Sass: $(sass --version)"
+          echo "Hugo: $(hugo version)"
+          echo "rclone: $(rclone --version)"
+      - name: Configure Git
+        run: |
+          git config core.quotepath false
+      - name: Cache restore
+        id: cache-restore
+        uses: actions/cache/restore@v4
+        with:
+          path: ${{ runner.temp }}/hugo_cache
+          key: hugo-${{ env.HUGO_VERSION }}
+          restore-keys: |
+            hugo-
+      - name: Build the site
+        run: |
+          hugo \
+            --gc \
+            --minify \
+            --baseURL https://gurfoto.ru/ \
+            --cacheDir "${{ runner.temp }}/hugo_cache"
+      - name: Cache save
+        id: cache-save
+        uses: actions/cache/save@v4
+        with:
+          path: ${{ runner.temp }}/hugo_cache
+          key: ${{ steps.cache-restore.outputs.cache-primary-key }}
+      - name: Upload site artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: public
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Install rclone
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y rclone
+      - name: Download site artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: public
+      - name: Deploy with rclone
+        run: |
+          rclone sync ./public :sftp:${{ secrets.SFTP_TARGET_DIR }} \
+            --sftp-host=${{ secrets.SFTP_HOST }} \
+            --sftp-user=${{ secrets.SFTP_USERNAME }} \
+            --sftp-pass=${{ secrets.SFTP_PASSWORD }} \
             --exclude "/vtour/**" \
-            --transfers=8 \
-            --checkers=16 \
-            --retries=5 \
-            --low-level-retries=10 \
-            --contimeout=15s \
-            --timeout=4m \
-            --stats=1s
+            --stats 1s
