@@ -18,15 +18,15 @@ defaults:
 
 env:
   TZ: Europe/Moscow
-  HUGO_VERSION: 0.137.1
+  HUGO_VERSION: 0.148.2
   DART_SASS_VERSION: 1.90.0
   HUGO_ENVIRONMENT: production
-  HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
   BASE_URL: https://gurfoto.ru/
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -34,23 +34,27 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
+      # Задаём HUGO_CACHEDIR без runner.temp — через $GITHUB_ENV
+      - name: Set Hugo cache dir
+        run: echo "HUGO_CACHEDIR=$GITHUB_WORKSPACE/.hugo_cache" >> "$GITHUB_ENV"
+
       - name: Prepare local bin dir
-        run: mkdir -p "${HOME}/.local" "${HOME}/.local/bin"
+        run: mkdir -p "$HOME/.local" "$HOME/.local/bin"
 
       - name: Install Dart Sass
         run: |
           curl -sLJO "https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz"
-          tar -C "${HOME}/.local" -xf "dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz"
+          tar -C "$HOME/.local" -xf "dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz"
           rm "dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz"
-          echo "${HOME}/.local/dart-sass" >> "${GITHUB_PATH}"
+          echo "$HOME/.local/dart-sass" >> "$GITHUB_PATH"
 
       - name: Install Hugo (extended)
         run: |
           curl -sLJO "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz"
-          mkdir -p "${HOME}/.local/hugo"
-          tar -C "${HOME}/.local/hugo" -xf "hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz"
+          mkdir -p "$HOME/.local/hugo"
+          tar -C "$HOME/.local/hugo" -xf "hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz"
           rm "hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz"
-          echo "${HOME}/.local/hugo" >> "${GITHUB_PATH}"
+          echo "$HOME/.local/hugo" >> "$GITHUB_PATH"
 
       - name: Verify toolchain
         run: |
@@ -59,63 +63,7 @@ jobs:
 
       - name: Build with Hugo
         run: |
-          hugo --gc --minify --baseURL "${BASE_URL}"
+          hugo --gc --minify --baseURL "$BASE_URL"
 
       - name: Install rclone
-        run: |
-          sudo apt-get update -y
-          sudo apt-get install -y rclone
-
-      - name: Mask sensitive secrets in logs
-        if: ${{ secrets.SFTP_PASSWORD != '' }}
-        run: echo "::add-mask::${{ secrets.SFTP_PASSWORD }}"
-
-      # Deploy via SSH key (рекомендуется)
-      - name: Deploy via rclone (SFTP with SSH key)
-        if: ${{ secrets.SFTP_PRIVATE_KEY != '' }}
-        env:
-          SFTP_HOST: ${{ secrets.SFTP_HOST }}
-          SFTP_USERNAME: ${{ secrets.SFTP_USERNAME }}
-          SFTP_TARGET_DIR: ${{ secrets.SFTP_TARGET_DIR }}
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.SFTP_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
-          chmod 600 ~/.ssh/id_ed25519
-          echo "${{ secrets.SFTP_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
-          chmod 644 ~/.ssh/known_hosts
-
-          rclone sync ./public :sftp:${SFTP_TARGET_DIR} \
-            --sftp-host="${SFTP_HOST}" \
-            --sftp-user="${SFTP_USERNAME}" \
-            --sftp-key-file="${HOME}/.ssh/id_ed25519" \
-            --sftp-known-hosts-file="${HOME}/.ssh/known_hosts" \
-            --exclude "/vtour/**" \
-            --transfers=8 \
-            --checkers=16 \
-            --retries=5 \
-            --low-level-retries=10 \
-            --contimeout=15s \
-            --timeout=2m \
-            --stats=1s
-
-      # Fallback: Deploy via password
-      - name: Deploy via rclone (SFTP with password)
-        if: ${{ secrets.SFTP_PRIVATE_KEY == '' && secrets.SFTP_PASSWORD != '' }}
-        env:
-          SFTP_HOST: ${{ secrets.SFTP_HOST }}
-          SFTP_USERNAME: ${{ secrets.SFTP_USERNAME }}
-          SFTP_TARGET_DIR: ${{ secrets.SFTP_TARGET_DIR }}
-          SFTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
-        run: |
-          rclone sync ./public :sftp:${SFTP_TARGET_DIR} \
-            --sftp-host="${SFTP_HOST}" \
-            --sftp-user="${SFTP_USERNAME}" \
-            --sftp-pass="$(rclone obscure "${SFTP_PASSWORD}")" \
-            --exclude "/vtour/**" \
-            --transfers=8 \
-            --checkers=16 \
-            --retries=5 \
-            --low-level-retries=10 \
-            --contimeout=15s \
-            --timeout=2m \
-            --stats=1s
+        run:
