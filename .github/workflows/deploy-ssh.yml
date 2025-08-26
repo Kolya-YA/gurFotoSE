@@ -18,7 +18,7 @@ defaults:
 
 env:
   TZ: Europe/Moscow
-  HUGO_VERSION: 0.148.2
+  HUGO_VERSION: 0.137.1
   DART_SASS_VERSION: 1.90.0
   HUGO_ENVIRONMENT: production
   BASE_URL: https://gurfoto.ru/
@@ -66,4 +66,34 @@ jobs:
           hugo --gc --minify --baseURL "$BASE_URL"
 
       - name: Install rclone
-        run:
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y rclone
+
+      # Маскируем пароль, если он есть (проверка по env, не по secrets)
+      - name: Mask sensitive secrets in logs
+        env:
+          SFTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
+        if: ${{ env.SFTP_PASSWORD != '' }}
+        run: echo "::add-mask::${SFTP_PASSWORD}"
+
+      # деплой паролем (пароль "зашумляем" через rclone obscure)
+      - name: Deploy via rclone (SFTP with password)
+        env:
+          SFTP_HOST: ${{ secrets.SFTP_HOST }}
+          SFTP_USERNAME: ${{ secrets.SFTP_USERNAME }}
+          SFTP_TARGET_DIR: ${{ secrets.SFTP_TARGET_DIR }}
+          SFTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
+        run: |
+          rclone sync ./public :sftp:${SFTP_TARGET_DIR} \
+            --sftp-host="${SFTP_HOST}" \
+            --sftp-user="${SFTP_USERNAME}" \
+            --sftp-pass="$(rclone obscure "${SFTP_PASSWORD}")" \
+            --exclude "/vtour/**" \
+            --transfers=8 \
+            --checkers=16 \
+            --retries=5 \
+            --low-level-retries=10 \
+            --contimeout=15s \
+            --timeout=4m \
+            --stats=1s
