@@ -6,12 +6,12 @@
                 {{ partial "page-header" . }}
                 {{ .Content }}
                 <ul class="list-content__list">
-                    {{ range .Pages }}
+                    {{ range .RegularPages }}
                     {{ $pageDate := .Date.Format "2006-01-02" }}
                     <li class="list-content__item">
-                        <a href="{{ .Permalink }}">{{ .Title }}</a>
-                        
-                        <time datetime="{{ $pageDate }}"> | {{ $pageDate }}</time>
+                        <a href="{{ .RelPermalink }}" rel="bookmark">{{ .Title }}</a> 
+                        <span> | </span>
+                        <time datetime="{{ $pageDate }}">{{ $pageDate }}</time>
                     </li>
                     {{ end }}
                 </ul>
