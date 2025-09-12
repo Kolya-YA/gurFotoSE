@@ -1,0 +1,13 @@
+<script>
+  MathJax = {
+    loader: { load: ['input/tex-base', 'output/chtml'] },     
+    tex: {
+      packages: { '[+]': [] },
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  // block
+      inlineMath: [['\\(', '\\)']]                  // inline
+    },
+    startup: { typeset: true }
+
+  };
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
