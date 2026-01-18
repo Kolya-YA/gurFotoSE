@@ -157,8 +157,8 @@ date: 2026-01-16
 Такие концептуальные портреты особенно эффективны для передачи мыслей, эмоций и личных историй.
 
 Можно наложить мягкие облака, дождевые капли, старинные записи – каждый элемент превращает портрет в визуальную метафору.
-{{< imgr src="Multiple-exposure-in-Photoshop/Multiple-exposure-in-Photoshop 10.jpg" alt="Brandon Kidwell">}}
-*Brandon Kidwell*
+{{< imgr src="Multiple-exposure-in-Photoshop/Multiple-exposure-in-Photoshop 11.jpg" alt="Thomas Barbey">}}
+*Thomas Barbey*
 
 *Помните, что при съёмке портрета важно получить чёткий силуэт (чистый фон) и резкие черты лица – тогда текстура на нём будет хорошо читаться.*
 
@@ -171,8 +171,8 @@ date: 2026-01-16
 Выбор наложения для пейзажа зависит от посыла: абстрактные формы, световые следы машин или фантастическое небо – возможности безграничны.
 
 Главное – продумать гармонию: светлые участки второго снимка должны дополнять тёмный контур пейзажа.
-{{< imgr src="Multiple-exposure-in-Photoshop/Multiple-exposure-in-Photoshop 11.jpg" alt="Thomas Barbey">}}
-*Thomas Barbey*
+{{< imgr src="Multiple-exposure-in-Photoshop/Multiple-exposure-in-Photoshop 12.jpg" alt="Jerry Uelsmann American, 1934–2022 Untitled, 1987">}}
+*Jerry Uelsmann American, 1934–2022 Untitled, 1987*
 
 ### Абстракция
 
@@ -183,8 +183,8 @@ date: 2026-01-16
 Добавление динамичных световых эффектов (bokeh, неоновая подсветка) «вводит яркость и абстракцию» и придаёт сюжету новизну.
 
 Важно не перегрузить кадр: в абстрактных композициях часто действует правило «минимализма» – один яркий мотив на фоне простого силуэта.
-{{< imgr src="Multiple-exposure-in-Photoshop/Multiple-exposure-in-Photoshop 12.jpg" alt="Jerry Uelsmann American, 1934–2022 Untitled, 1987">}}
-*Jerry Uelsmann American, 1934–2022 Untitled, 1987*
+{{< imgr src="Multiple-exposure-in-Photoshop/Multiple-exposure-in-Photoshop 10.jpg" alt="Brandon Kidwell">}}
+*Brandon Kidwell*
 
 ### Двойственность и контрасты
 
