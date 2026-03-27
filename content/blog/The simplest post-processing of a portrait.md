@@ -1,7 +1,7 @@
 ---
 title: 'Простая постобработка портрета в Photoshop: практическое руководство'
 description: "Практические приёмы обработки портрета для начинающих: от RAW до финального результата: тон, свет, цвет и текстура."
-date: 2026-01-23
+date: 2026-01-24
 ---
 
 {{< imgr src="The simplest post-processing of a portrait/The simplest post-processing of a portrait 1.jpg" alt="Портрет молодой женщины. Коллаж. Автор Юрий Гуревич.">}}
