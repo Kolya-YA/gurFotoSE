@@ -1,0 +1,9 @@
+INFO  build:  step process substep collect files 178 files_total 178 pagesources_total 168 resourcesources_total 10 duration 15.703ms
+INFO  build:  step process duration 27.2012ms
+INFO  static: syncing static files to \ duration 30.8031ms
+INFO  build:  step assemble duration 215.882ms
+DEBUG images: Decoding image from format JPEG
+DEBUG images: Decoding image from format WEBP
+DEBUG images: Encoding image to format WEBP with config {TargetFormat:WEBP Action:fill Key:448ebc0ee4ba97ba Quality:72 Rotate:0 BgColor:<nil> Hint:photo Compression:lossy UseSharpYuv:false Method:2 Width:428 Height:241 Filter:BoxResampling Anchor:1000}
+DEBUG images: Decoding image from format WEBP
+INFO  webp: started dispatcher in 1.2855297s

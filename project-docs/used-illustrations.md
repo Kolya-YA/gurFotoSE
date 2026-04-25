@@ -60,3 +60,36 @@
 | 2026-04-15 | Weegee | Their First Murder, 1941 | 2026-06-15 или +25 статей | Использовано |
 | 2026-04-16 | René Burri | Men on a Rooftop, São Paulo, 1960 | 2026-06-16 или +25 статей | Использовано |
 | 2026-04-15 | August Sander | Pastry Cook, 1928 | 2026-06-15 или +25 статей | Использовано |
+| 2026-04-22 | Richard Avedon | Sunny Harnett, Turban and Evening Dress by Dior, Théâtre Marigny, Paris, June 1954 | 2026-06-22 или +25 статей | Использовано |
+| 2026-04-22 | Guy Bourdin | Charles Jourdan, Spring 1978 | 2026-06-22 или +25 статей | Использовано |
+| 2026-04-22 | Lillian Bassman | The V Back, Evening Dress by Trigere, New York, 1955 | 2026-06-22 или +25 статей | Использовано |
+| 2026-04-22 | Gordon Parks | Department Store, Mobile, Alabama, 1956 | 2026-06-22 или +25 статей | Использовано |
+| 2026-04-22 | Hiro | Marisa Berenson, Hat by Halston, Harper's Bazaar Cover, 1966 | 2026-06-22 или +25 статей | Использовано |
+| 2026-04-22 | Horst P. Horst | The Mainbocher Corset, Paris, 1939 | 2026-06-22 или +25 статей | Использовано |
+| 2026-04-22 | Sarah Moon | Cacharel Campaign, 1970s | 2026-06-22 или +25 статей | Использовано |
+| 2026-04-22 | Sheila Metzner | Uma in Dress by Patou, 1986 | 2026-06-22 или +25 статей | Использовано |
+| 2026-04-22 | Frank Horvat | Paris, for Jardin des Modes, Givenchy Hat, 1958 | 2026-06-22 или +25 статей | Использовано |
+| 2026-04-22 | Guy Bourdin | Charles Jourdan, Autumn 1977 | 2026-06-22 или +25 статей | Использовано |
+| 2026-04-24 | Arnold Newman | Igor Stravinsky, 1946 | 2026-06-24 или +25 статей | Как снять портрет без студии и сложного света |
+| 2026-04-24 | August Sander | Circus Artists (Zirkusartisten) | 2026-06-24 или +25 статей | Как снять портрет без студии и сложного света |
+| 2026-04-24 | Yousuf Karsh | Albert Einstein, 1948 | 2026-06-24 или +25 статей | Как снять портрет без студии и сложного света |
+| 2026-04-24 | Yousuf Karsh | Ernest Hemingway, Finca Vigía, 1957 | 2026-06-24 или +25 статей | Как снять портрет без студии и сложного света |
+| 2026-04-24 | Rineke Dijkstra | Coney Island, N.Y., USA, July 9, 1993 | 2026-06-24 или +25 статей | Как снять портрет без студии и сложного света |
+| 2026-04-24 | Walker Evans | Subway Portrait. January 17, 1941 | 2026-06-24 или +25 статей | Как снять портрет без студии и сложного света |
+| 2026-04-24 | Walker Evans | Alabama Tenant Farmer Family Singing Hymns, 1936 | 2026-06-24 или +25 статей | Как снять портрет без студии и сложного света |
+| 2026-04-24 | Dorothea Lange | Korean Child, Korea, 1958 | 2026-06-24 или +25 статей | Как снять портрет без студии и сложного света |
+| 2026-04-24 | Helen Levitt | Manhattan Transit | 2026-06-24 или +25 статей | Как снять портрет без студии и сложного света |
+| 2026-04-24 | Diane Arbus | Jewish Giant at Home with His Parents in the Bronx | 2026-06-24 или +25 статей | Как снять портрет без студии и сложного света |
+| 2026-04-24 | Walker Evans | Cotton Tenant Farmer’s Wife, 1936 | 2026-06-24 или +25 статей | Как снять портрет без студии и сложного света |
+| 2026-04-24 | Brassaï | Streetwalker near the Place d'Italie, Paris (from behind). 1932 | 2026-06-24 или +25 статей | Как снять портрет без студии и сложного света |
+| 2026-04-24 | Walker Evans | Penny Picture Display, Savannah, 1936 | 2026-06-24 или +25 статей | Как снять портрет без студии и сложного света |
+| 2026-04-24 | Henri Cartier-Bresson | Rue Mouffetard, Paris, 1954 | 2026-06-24 или +25 статей | Как снять портрет без студии и сложного света |
+| 2026-04-24 | Lee Friedlander | Glenwood Springs, Colorado, 1981 | 2026-06-24 или +25 статей | Как снять портрет без студии и сложного света |
+| 2026-04-24 | August Sander | Young Mother, Middle-class, 1926 | 2026-06-24 или +25 статей | Как снять портрет без студии и сложного света |
+| 2026-04-24 | August Sander | Three Generations of the Family, 1912 | 2026-06-24 или +25 статей | Как снять портрет без студии и сложного света |
+| 2026-04-24 | Robert Doisneau | Le baiser de l'Hôtel de Ville | 2026-06-24 или +25 статей | Как снять портрет без студии и сложного света |
+| 2026-04-24 | Irving Penn | Marlene Dietrich, New York, 1948 | 2026-06-24 или +25 статей | Как снять портрет без студии и сложного света |
+| 2026-04-24 | Lotte Jacobi | Albert Einstein, 1938 | 2026-06-24 или +25 статей | Как снять портрет без студии и сложного света |
+| 2026-04-24 | Bill Brandt | Nude, Campden Hill, London | 2026-06-24 или +25 статей | Как снять портрет без студии и сложного света |
+| 2026-04-24 | Robert Doisneau | Picasso et Françoise Gilot, 1952 | 2026-06-24 или +25 статей | Как снять портрет без студии и сложного света |
+| 2026-04-24 | Henri Cartier-Bresson | Railway station, St. Louis, Missouri, 1957 | 2026-06-24 или +25 статей | Как снять портрет без студии и сложного света |

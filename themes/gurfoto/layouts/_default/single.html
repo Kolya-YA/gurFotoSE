@@ -6,7 +6,7 @@
                 {{ partial "page-header" . }}        
                 {{ .Content }}
             </article>
-            {{- with .Params.Form }}
+            {{- with .Params.FormSection }}
                 {{ partial "form-section" . }}
             {{- end }}
         </main>

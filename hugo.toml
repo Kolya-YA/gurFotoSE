@@ -1,5 +1,7 @@
 # Do not change!
 baseURL = 'https://gurfoto.ru/'
+# Keep Hugo's cache inside the project to avoid OS-level cache permission issues.
+cacheDir = 'C:/Verstak/gurFotoSE/.hugo_cache'
 # Do not change! 
 defaultContentLanguage = 'ru'
 # SEO — text for title tag in head section
