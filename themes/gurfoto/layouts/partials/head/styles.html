@@ -1,9 +1,4 @@
-{{ $opts := dict 
-    "transpiler" "dartsass"
-    "targetPath" "styles/main.css"
-    "enableSourceMap" (not hugo.IsProduction)
-}}
-{{ $styles := resources.Get "scss/main.scss" | toCSS $opts }}
+{{ $styles := resources.Get "styles/main.css" }}
 {{ if hugo.IsProduction }}
 {{ $styles = $styles | resources.Minify | resources.Fingerprint }}
 {{ else }}

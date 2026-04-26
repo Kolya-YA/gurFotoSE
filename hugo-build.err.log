@@ -1,9 +1,27 @@
-INFO  build:  step process substep collect files 178 files_total 178 pagesources_total 168 resourcesources_total 10 duration 15.703ms
-INFO  build:  step process duration 27.2012ms
-INFO  static: syncing static files to \ duration 30.8031ms
-INFO  build:  step assemble duration 215.882ms
+INFO  build:  step process substep collect files 178 files_total 178 pagesources_total 168 resourcesources_total 10 duration 17.5539ms
+INFO  build:  step process duration 39.7199ms
+INFO  static: syncing static files to \ duration 72.571ms
+INFO  build:  step assemble duration 205.5799ms
 DEBUG images: Decoding image from format JPEG
-DEBUG images: Decoding image from format WEBP
-DEBUG images: Encoding image to format WEBP with config {TargetFormat:WEBP Action:fill Key:448ebc0ee4ba97ba Quality:72 Rotate:0 BgColor:<nil> Hint:photo Compression:lossy UseSharpYuv:false Method:2 Width:428 Height:241 Filter:BoxResampling Anchor:1000}
-DEBUG images: Decoding image from format WEBP
-INFO  webp: started dispatcher in 1.2855297s
+DEBUG images: Encoding image to format WEBP with config {TargetFormat:WEBP Action:resize Key:f26a28bce77e321 Quality:78 Rotate:0 BgColor:<nil> Hint:photo Compression:lossy UseSharpYuv:false Method:2 Width:1240 Height:0 Filter:BoxResampling Anchor:1000}
+INFO  webp: started dispatcher in 2.0013863s
+DEBUG images: Decoding image from format JPEG
+DEBUG images: Encoding image to format WEBP with config {TargetFormat:WEBP Action:resize Key:8c91d8f6368cef60 Quality:78 Rotate:0 BgColor:<nil> Hint:photo Compression:lossy UseSharpYuv:false Method:2 Width:1181 Height:0 Filter:BoxResampling Anchor:1000}
+DEBUG images: Decoding image from format JPEG
+DEBUG images: Encoding image to format WEBP with config {TargetFormat:WEBP Action:resize Key:2c9cef69af5c7d61 Quality:78 Rotate:0 BgColor:<nil> Hint:photo Compression:lossy UseSharpYuv:false Method:2 Width:1024 Height:0 Filter:BoxResampling Anchor:1000}
+DEBUG images: Decoding image from format JPEG
+DEBUG images: Encoding image to format WEBP with config {TargetFormat:WEBP Action:resize Key:2c9cef69af5c7d61 Quality:78 Rotate:0 BgColor:<nil> Hint:photo Compression:lossy UseSharpYuv:false Method:2 Width:1024 Height:0 Filter:BoxResampling Anchor:1000}
+DEBUG images: Decoding image from format JPEG
+DEBUG images: Encoding image to format WEBP with config {TargetFormat:WEBP Action:resize Key:131a2fa7967b82b4 Quality:78 Rotate:0 BgColor:<nil> Hint:photo Compression:lossy UseSharpYuv:false Method:2 Width:1172 Height:0 Filter:BoxResampling Anchor:1000}
+DEBUG images: Decoding image from format JPEG
+DEBUG images: Encoding image to format WEBP with config {TargetFormat:WEBP Action:resize Key:63976efaff9027e1 Quality:78 Rotate:0 BgColor:<nil> Hint:photo Compression:lossy UseSharpYuv:false Method:2 Width:1156 Height:0 Filter:BoxResampling Anchor:1000}
+DEBUG images: Decoding image from format JPEG
+DEBUG images: Encoding image to format WEBP with config {TargetFormat:WEBP Action:resize Key:5f0a620d005fddd9 Quality:78 Rotate:0 BgColor:<nil> Hint:photo Compression:lossy UseSharpYuv:false Method:2 Width:1050 Height:0 Filter:BoxResampling Anchor:1000}
+DEBUG images: Decoding image from format JPEG
+DEBUG images: Encoding image to format WEBP with config {TargetFormat:WEBP Action:resize Key:e1b1648ad72444e8 Quality:78 Rotate:0 BgColor:<nil> Hint:photo Compression:lossy UseSharpYuv:false Method:2 Width:1080 Height:0 Filter:BoxResampling Anchor:1000}
+INFO  build:  step render substep pages site ru outputFormat html duration 24.9337978s
+INFO  build:  step render substep pages site ru outputFormat rss duration 320.4747ms
+INFO  build:  step render pages 177 content 175 duration 25.2622749s
+INFO  build:  step render deferred count 0 duration 0s
+INFO  build:  step postProcess duration 1.011ms
+INFO  build:  duration 25.5275579s

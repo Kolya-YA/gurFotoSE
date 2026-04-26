@@ -2,7 +2,13 @@
 {{ $phone := index site.Params.phones 0 }}
 {{ $email := site.Params.email  }}
 {{ with $heroBg }}
-<div class="hero" role="banner" style="--hero-bg-image: url('{{ .RelPermalink }}');">
+{{- $heroBgOptimized := . -}}
+{{- if gt .Width 1600 }}
+    {{- $heroBgOptimized = .Resize "1600x webp q76" }}
+{{- else }}
+    {{- $heroBgOptimized = .Resize (printf "%dx webp q76" .Width) }}
+{{- end }}
+<div class="hero" role="banner" style="--hero-bg-image: url('{{ $heroBgOptimized.RelPermalink }}');">
 {{ end }}
     <div class="width-wrapper">
         <div class="hero__block">

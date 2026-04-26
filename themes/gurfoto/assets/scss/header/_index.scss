@@ -67,8 +67,12 @@
                 text-underline-offset: .5em;
                 display: block;
                 padding: 0.5em;
-                color: inherit;
+                color: var(--light-text-color);
                 transition: text-decoration-color 600ms ease, color 300ms ease;
+
+                &:visited {
+                    color: var(--light-text-color);
+                }
                 
                 &:is(:hover, :focus-visible) {
                     color: var(--link-color);
@@ -97,10 +101,14 @@
                     opacity: var(--desktop-sublist-opacity, 1);
 
                     & a {
-                        color: inherit;
+                        color: var(--light-text-color);
                         text-decoration: none;
                         line-height: 1.8;
                         transition: color 300ms ease-in-out;
+
+                        &:visited {
+                            color: var(--light-text-color);
+                        }
 
                         &:is(:hover, :focus-visible) {
                             color: var(--link-color);

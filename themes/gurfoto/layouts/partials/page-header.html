@@ -12,9 +12,15 @@
 {{- end }}
 
 {{- with $pageBg }}
+{{- $pageBgOptimized := . -}}
+{{- if gt .Width 1400 }}
+    {{- $pageBgOptimized = .Resize "1400x webp q76" }}
+{{- else }}
+    {{- $pageBgOptimized = .Resize (printf "%dx webp q76" .Width) }}
+{{- end }}
 <header
 class="page-header page-header--bg"
-style="--page-header-bg-image: url('{{ .RelPermalink }}');">
+style="--page-header-bg-image: url('{{ $pageBgOptimized.RelPermalink }}');">
 {{- else }}
 <header class="page-header">
 {{- end }}
